@@ -1,0 +1,26 @@
+{
+  "name": "style-app",
+  "version": "1.0.0",
+  "description": "project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarongaither/styleApp.git"
+  },
+  "author": "Aaron Gaither, Lina Shamoon, Thomas Mercer, Fabio Aiello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarongaither/styleApp/issues"
+  },
+  "homepage": "https://github.com/aarongaither/styleApp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mysql2": "^1.3.6",
+    "sequelize": "^4.4.2"
+  }
+}
