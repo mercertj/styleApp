@@ -1,3 +1,6 @@
+# Config file with local db info
+config.json
+
 # Mac files
 .DS_Store
 
