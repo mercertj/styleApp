@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "display:none;",
     "database": "stylistApp",
     "host": "localhost",
     "dialect": "mysql"
