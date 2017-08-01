@@ -1,0 +1,26 @@
+body {
+	font-family: 'Contrail One', cursive;
+}
+
+#logo {
+	font-size: 35px;
+	color: black;
+	text-shadow: 2px 2px #999999;
+}
+
+#main {
+    background: #E3E3E3;
+}
+
+.image {
+    background: #E3E3E3;
+}
+
+#about {
+	margin-top: 20px;
+	background: pink;
+}
+
+.modal{
+	
+}
