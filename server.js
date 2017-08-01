@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 8080;
 
 const db = require("./models");
 
+const reset = process.argv[2] === '--reset' ? {force: true} : {force: false};
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
@@ -15,6 +17,6 @@ app.use(express.static("public"));
 
 require("./controllers/htmlController.js")(app);
 
-db.sequelize.sync().then(() => {
+db.sequelize.sync(reset).then(() => {
   app.listen(PORT, () => console.log("App listening on PORT " + PORT));
 });
