@@ -6,4 +6,6 @@ module.exports = app => {
 
   app.get("/results", (req, res) => res.sendFile(path.join(__dirname, "../public/results.html")));
 
+  app.get("/stylist", (req, res) => res.sendFile(path.join(__dirname, "../public/profile.html")));
+
 };
