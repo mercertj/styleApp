@@ -35,6 +35,10 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+		travel_range: {
+			type: DataTypes.INTEGER,
+			allowNull: false
+		},
 		street_address: {
 			type: DataTypes.STRING,
 			allowNull: false
