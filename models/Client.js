@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
 
-	const Stylist = sequelize.define("Stylist" , {
+	const Client = sequelize.define("Client" , {
 		first_name: {
 			type: DataTypes.STRING,
 			allowNull: false,
@@ -17,26 +17,6 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		email: {
 			type: DataTypes.STRING,
-			allowNull: false
-		},
-		bio: {
-			type: DataTypes.TEXT,
-			allowNull: false
-		},
-		experience: {
-			type: DataTypes.INTEGER,
-			allowNull: false
-		},
-		phone_number: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		speciality: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		travel_range: {
-			type: DataTypes.INTEGER,
 			allowNull: false
 		},
 		street_address: {
@@ -60,11 +40,11 @@ module.exports = function(sequelize, DataTypes) {
 		underscored: true
 	});
 
-	Stylist.associate = models => {
-	  Stylist.hasMany(models.Review, {
+	Client.associate = models => {
+	  Client.hasMany(models.Feedback, {
 	    onDelete: "cascade"
 	  });
 	};
 
-	return Stylist;
+	return Client;
 };
