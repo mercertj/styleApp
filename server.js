@@ -16,7 +16,10 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("public"));
 
 require("./controllers/htmlController.js")(app);
-require("./controllers/apiController.js")(app);
+require("./controllers/apiStylist.js")(app);
+require("./controllers/apiClient.js")(app);
+require("./controllers/apiTest.js")(app);
+
 
 db.sequelize.sync(reset).then(() => {
   app.listen(PORT, () => console.log("App listening on PORT " + PORT));
