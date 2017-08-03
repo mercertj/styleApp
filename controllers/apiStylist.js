@@ -3,11 +3,14 @@ const db = require("../models");
 module.exports = app => {
 
     app.get("/api/stylist", (req, res) => {
-        db.Stylist.findAll({}).then(result => res.json(result)).catch(err => console.log(err));
+        db.Stylist.findAll({
+            include: [{model: db.Review, include: [db.Client]}]
+        }).then(result => res.json(result)).catch(err => console.log(err));
     })
 
     app.get("/api/stylist/:id", (req, res) => {
         db.Stylist.findOne({
+            include: [{model: db.Review, include: [db.Client]}],
             where: {
                 id: req.params.id
             }
