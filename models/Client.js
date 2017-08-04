@@ -34,7 +34,9 @@ module.exports = function(sequelize, DataTypes) {
 		zipcode:{
 			type: DataTypes.STRING,
 			allowNull: false
-		}
+		},
+		address_lat: DataTypes.FLOAT,
+		address_long:  DataTypes.FLOAT
 	},
 	{
 		underscored: true
