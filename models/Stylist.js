@@ -17,7 +17,10 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		email: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: false,
+			validate: {
+				isEmail: true
+			}
 		},
 		bio: {
 			type: DataTypes.TEXT,
@@ -55,8 +58,14 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		address_lat: DataTypes.FLOAT,
-		address_long:  DataTypes.FLOAT
+		address_lat: {
+			type: DataTypes.FLOAT,
+			validate: { min: -90, max: 90 }
+		},
+		address_long: {
+			type: DataTypes.FLOAT,
+			validate: { min: -180, max: 180 }
+		} 
 	},
 	{
 		underscored: true
