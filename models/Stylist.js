@@ -34,10 +34,14 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		speciality: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
+		cut: DataTypes.Boolean,
+		blow_dry: DataTypes.Boolean,
+		color: DataTypes.Boolean,
+		highlights: DataTypes.Boolean,
+		lowlights: DataTypes.Boolean,
+		ombre: DataTypes.Boolean,
+		balayage: DataTypes.Boolean,
+		hair_do: DataTypes.Boolean,
 		travel_range: {
 			type: DataTypes.INTEGER,
 			allowNull: false
