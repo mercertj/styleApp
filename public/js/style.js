@@ -17,11 +17,20 @@ $('.delete').on('click', function() {
 });
 
 $('.no-color').on('click', function() {
-$('.color').show();
-$('.no-color').hide();
+    $('.color').show();
+    $('.no-color').hide();
 });
 
 $('.color').on('click', function() {
-$('.color').hide();
-$('.no-color').show();
+    $('.color').hide();
+    $('.no-color').show();
 });
+
+var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+var mapOptions = {
+    zoom: 8,
+    center: myLatlng,
+    mapTypeId: 'satellite'
+};
+var map = new google.maps.Map(document.getElementById('map'),
+    mapOptions);

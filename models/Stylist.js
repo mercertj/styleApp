@@ -17,7 +17,10 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		email: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: false,
+			validate: {
+				isEmail: true
+			}
 		},
 		bio: {
 			type: DataTypes.TEXT,
@@ -31,10 +34,14 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		speciality: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
+		cut: DataTypes.Boolean,
+		blow_dry: DataTypes.Boolean,
+		color: DataTypes.Boolean,
+		highlights: DataTypes.Boolean,
+		lowlights: DataTypes.Boolean,
+		ombre: DataTypes.Boolean,
+		balayage: DataTypes.Boolean,
+		hair_do: DataTypes.Boolean,
 		travel_range: {
 			type: DataTypes.INTEGER,
 			allowNull: false
@@ -54,7 +61,15 @@ module.exports = function(sequelize, DataTypes) {
 		zipcode:{
 			type: DataTypes.STRING,
 			allowNull: false
-		}
+		},
+		address_lat: {
+			type: DataTypes.FLOAT,
+			validate: { min: -90, max: 90 }
+		},
+		address_long: {
+			type: DataTypes.FLOAT,
+			validate: { min: -180, max: 180 }
+		} 
 	},
 	{
 		underscored: true
