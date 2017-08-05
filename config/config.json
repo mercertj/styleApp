@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Iilali00_",
+    "password": "",
     "database": "stylistApp",
     "host": "localhost",
     "dialect": "mysql"
