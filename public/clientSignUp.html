@@ -17,26 +17,26 @@
     <div class="column is-half is-offset-one-quarter">
 
         <div id="stylist-form" class="stylist-form">
-            <div id="first-name" class="field">
+            <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" id="first-name" type="text" placeholder="Text input">
                 </div>
             </div>
 
             <!--last-name-->
 
             <label class="label">Last Name</label>
-            <div id="last-name" class="control">
-                <input class="input" type="text" placeholder="Text input">
+            <div  class="control">
+                <input class="input" id="last-name" type="text" placeholder="Text input">
             </div>
 
             <!--email-->
 
             <div class="field">
-                <label id="email" class="label">Email</label>
+                <label  class="label">Email</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="Email input" value="hello@">
+                    <input class="input" id="email" type="text" placeholder="Email input" value="hello@">
                     <span class="icon is-small is-left">
       <i class="fa fa-envelope"></i>
     </span>
@@ -45,54 +45,56 @@
             </div>
 
             <!--phone_number-->
-
-            <div id="phone-number" class="field">
+<!-- 
+            <div class="field">
                 <label class="label">Phone Number</label>
                 <div class="control">
-                    <input class="input" type="number" placeholder="Text input">
+                    <input class="input" id="phone-number" type="number" placeholder="Text input">
                 </div>
             </div>
-
+ -->
             <!--street address-->
 
-            <div id="address" class="field">
+            <div  class="field">
                 <label class="label">Street Address</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" id="address" type="text" placeholder="Text input">
                 </div>
             </div>
 
             <!--city-->
 
-            <div id="city" class="field">
+            <div  class="field">
                 <label class="label">City</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" id="city" type="text" placeholder="Text input">
                 </div>
             </div>
 
             <!--state-->
 
-            <div id="state" class="field">
+            <div  class="field">
                 <label class="label">State</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" id="state"type="text" placeholder="Text input">
                 </div>
             </div>
 
             <!--zipcode-->
 
-            <div id="zip-code" class="field">
+            <div  class="field">
                 <label class="label">Zip Code</label>
                 <div class="control">
-                    <input class="input" type="number" placeholder="Text input">
+                    <input class="input" id="zip-code" type="number" placeholder="Text input">
                 </div>
             </div>
         </div>
     </div>
 </div>
+<button id="client-form">Submit</button>
 
 <script type="text/javascript" src="js/clientSignUpStyle.js"></script>
+<script type="text/javascript" src="js/clientSignUp.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </body>
 
