@@ -1,114 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylistSignUpStyle.css">
+    <title>Style App!</title>
+</head>
+
 <!--first-name-->
+<div class="columns">
+    <div class="column is-half is-offset-one-quarter">
 
-<div id="stylist-form" class="stylist-form">
-    <div id="first-name" class="field">
-        <label class="label">Name</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-        </div>
-    </div>
+        <div id="stylist-form" class="stylist-form">
+            <div id="first-name" class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
 
-    <!--last-name-->
+            <!--last-name-->
 
-    <label class="label">Last Name</label>
-    <div id="last-name" class="control">
-        <input class="input" type="text" placeholder="Text input">
-    </div>
+            <label class="label">Last Name</label>
+            <div id="last-name" class="control">
+                <input class="input" type="text" placeholder="Text input">
+            </div>
 
-    <!--email-->
+            <!--email-->
 
-    <div class="field">
-        <label id="email" class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
-            <span class="icon is-small is-left">
+            <div class="field">
+                <label id="email" class="label">Email</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="text" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
       <i class="fa fa-envelope"></i>
     </span>
-            <span class="icon is-small is-right">
-      <i class="fa fa-warning"></i>
-    </span>
-        </div>
-        <!--<p class="help is-danger">This email is invalid</p>-->
-    </div>
+                </div>
+                <!--<p class="help is-danger">This email is invalid</p>-->
+            </div>
 
-    <!--bio-->
+            <!--bio-->
 
-    <div id="bio" class="field">
-        <label class="label">Bio</label>
-        <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-        </div>
-    </div>
+            <div id="bio" class="field">
+                <label class="label">Bio</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
 
-    <!--experience-->
+            <!--experience-->
 
-    <div id="experience" class="field">
-        <label class="label">Experience</label>
-        <div class="control">
-            <input class="input" type="number" placeholder="Text input">
-        </div>
-    </div>
+            <div id="experience" class="field">
+                <label class="label">Experience</label>
+                <div class="control">
+                    <input class="input" type="number" placeholder="Text input">
+                </div>
+            </div>
 
-    <!--phone_number-->
+            <!--phone_number-->
 
-    <div id="phone-number" class="field">
-        <label class="label">Phone Number</label>
-        <div class="control">
-            <input class="input" type="number" placeholder="Text input">
-        </div>
-    </div>
+            <div id="phone-number" class="field">
+                <label class="label">Phone Number</label>
+                <div class="control">
+                    <input class="input" type="number" placeholder="Text input">
+                </div>
+            </div>
 
-    <!--street address-->
+            <!--street address-->
 
-    <div id="address" class="field">
-        <label class="label">Street Address</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-        </div>
-    </div>
+            <div id="address" class="field">
+                <label class="label">Street Address</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
 
-    <!--specialty-->
-
-    <div class="field">
-        <div id="specialty" class="control">
-            <label class="checkbox">
+            <!--specialty-->
+            <strong>Specialty</strong>
+            <div class="field">
+                <div id="specialty" class="control">
+                    <label class="checkbox">
       <input type="checkbox">
       Cut
     </label>
-            <label class="checkbox">
+                    <label class="checkbox">
       <input type="checkbox">
       Blow Dry
     </label>
-            <label class="checkbox">
+                    <label class="checkbox">
       <input type="checkbox">
       Color
     </label>
-            <label class="checkbox">
+                    <label class="checkbox">
       <input type="checkbox">
       Highlight
     </label>
-            <label class="checkbox">
+                    <label class="checkbox">
       <input type="checkbox">
       Ombre
     </label>
-            <label class="checkbox">
+                    <label class="checkbox">
       <input type="checkbox">
       Balayage
     </label>
-            <label class="checkbox">
+                    <label class="checkbox">
       <input type="checkbox">
       Hair-Do
     </label>
-        </div>
-    </div>
+                </div>
+            </div>
 
-    <!--travel range-->
+            <!--travel range-->
 
-    <div class="field">
-        <label id="travel-range" class="label">Travel Range</label>
-        <div class="control">
-            <div class="select">
-                <select>
+            <div class="field">
+                <label id="travel-range" class="label">Travel Range</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
         <option>Miles</option>
         <option>5</option>
         <option>10</option>
@@ -117,34 +130,43 @@
         <option>25</option>
         <option>30</option>
       </select>
+                    </div>
+                </div>
+            </div>
+
+            <!--city-->
+
+            <div id="city" class="field">
+                <label class="label">City</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+
+            <!--state-->
+
+            <div id="state" class="field">
+                <label class="label">State</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+
+            <!--zipcode-->
+
+            <div id="zip-code" class="field">
+                <label class="label">Zip Code</label>
+                <div class="control">
+                    <input class="input" type="number" placeholder="Text input">
+                </div>
             </div>
         </div>
     </div>
-
-    <!--city-->
-
-    <div id="city" class="field">
-        <label class="label">City</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-        </div>
-    </div>
-
-    <!--state-->
-
-    <div id="state" class="field">
-        <label class="label">State</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-        </div>
-    </div>
-
-    <!--zipcode-->
-
-    <div id="zip-code" class="field">
-        <label class="label">Zip Code</label>
-        <div class="control">
-            <input class="input" type="number" placeholder="Text input">
-        </div>
-    </div>
 </div>
+
+<script type="text/javascript" src="js/stylistSignUp.js"></script>
+<script type="text/javascript" src="js/stylistSignUpStyle.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</body>
+
+</html>

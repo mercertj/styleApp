@@ -69,3 +69,25 @@ input {
     border-top: 1px solid #dbdbdb;
     opacity: 0.5;
 }
+
+#service-search {
+    margin-top: 200px;
+    margin-left: 30%;
+}
+
+#distance-search {
+    margin-top: 200px;
+    margin-left: 0%;
+    color: #fff;
+}
+
+.select select {
+    border-radius: 0px;
+    background: transparent;
+    color: black;
+}
+
+option {
+    background-color: transparent;
+    color: black;
+}
