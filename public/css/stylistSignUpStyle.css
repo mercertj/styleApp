@@ -1,0 +1,51 @@
+body {
+    font-family: 'Contrail One', cursive;
+    background-image: url("../imgs/blackhair.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    min-height: 3.25rem;
+    position: fixed;
+    background: transparent;
+    color: white;
+}
+
+#modal-btn-one,
+#modal-btn-two {
+    color: white;
+}
+
+#logo {
+    font-size: 35px;
+    color: white;
+}
+
+.column.is-half.is-offset-one-quarter {
+    background: white;
+    opacity: 0.8;
+}
+
+.column {
+    padding-top: 100px;
+}
+
+.sign-up-title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#stylist-form {
+    margin-bottom: 50px;
+    margin-left: 47%;
+}
+
+#specs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}

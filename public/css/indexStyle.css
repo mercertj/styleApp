@@ -1,5 +1,8 @@
 body {
     font-family: 'Contrail One', cursive;
+    background-image: url("../imgs/hurr.png");
+    background-size: cover;
+    height: 500px;
 }
 
 .navbar {
@@ -15,9 +18,6 @@ body {
 
 #main {
     background: transparent;
-    background-image: url("../imgs/long-hair.png");
-    background-size: 100%;
-    height: 500px;
 }
 
 .button {
