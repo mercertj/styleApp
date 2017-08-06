@@ -8,10 +8,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/clientSignUpStyle.css">
-    <title>Style App!</title>
+    <title>Linda's List - Client Sign Up</title>
 </head>
-
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
+      Linda's List
+    </a>
+    </div>
+    <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only" href="index.html">
+        Home
+      </a>
+    <div id="navMenuExample" class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+            <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only">
+        Sign In
+      </a>
+            <a id="modal-btn-one" class="navbar-item is-hidden-desktop-only">
+        Sign Up
+      </a>
+        </div>
+    </div>
+</nav>
 <!--first-name-->
 <div class="columns">
     <div class="column is-half is-offset-one-quarter">
@@ -27,14 +49,14 @@
             <!--last-name-->
 
             <label class="label">Last Name</label>
-            <div  class="control">
+            <div class="control">
                 <input class="input" id="last-name" type="text" placeholder="Text input">
             </div>
 
             <!--email-->
 
             <div class="field">
-                <label  class="label">Email</label>
+                <label class="label">Email</label>
                 <div class="control has-icons-left">
                     <input class="input" id="email" type="text" placeholder="Email input" value="hello@">
                     <span class="icon is-small is-left">
@@ -45,7 +67,7 @@
             </div>
 
             <!--phone_number-->
-<!-- 
+            <!-- 
             <div class="field">
                 <label class="label">Phone Number</label>
                 <div class="control">
@@ -55,7 +77,7 @@
  -->
             <!--street address-->
 
-            <div  class="field">
+            <div class="field">
                 <label class="label">Street Address</label>
                 <div class="control">
                     <input class="input" id="address" type="text" placeholder="Text input">
@@ -64,7 +86,7 @@
 
             <!--city-->
 
-            <div  class="field">
+            <div class="field">
                 <label class="label">City</label>
                 <div class="control">
                     <input class="input" id="city" type="text" placeholder="Text input">
@@ -73,16 +95,16 @@
 
             <!--state-->
 
-            <div  class="field">
+            <div class="field">
                 <label class="label">State</label>
                 <div class="control">
-                    <input class="input" id="state"type="text" placeholder="Text input">
+                    <input class="input" id="state" type="text" placeholder="Text input">
                 </div>
             </div>
 
             <!--zipcode-->
 
-            <div  class="field">
+            <div class="field">
                 <label class="label">Zip Code</label>
                 <div class="control">
                     <input class="input" id="zip-code" type="number" placeholder="Text input">
