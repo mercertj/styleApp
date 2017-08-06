@@ -8,7 +8,7 @@ module.exports = app => {
 
   app.get("/stylistSignUp", (req, res) => res.sendFile(path.join(__dirname, "../public/stylistSignUp.html")));
 
-  app.post("/list", (req, res) => res.redirect(`/list/${req.body.speciality}/${req.body['distance-search']}`))
+  app.post("/list", (req, res) => res.redirect(`/list/${req.body.specialty}/${req.body['distance-search']}`))
 
   app.get("/list/:speciality/:range", (req, res) => {
   	res.sendFile(path.join(__dirname, "../public/list.html"))
