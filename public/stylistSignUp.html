@@ -12,10 +12,39 @@
     <link rel="stylesheet" href="css/stylistSignUpStyle.css">
     <title>Style App!</title>
 </head>
+
+<nav class="navbar">
+
+    <div class="navbar-brand">
+        <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
+      styleApp
+    </a>
+    </div>
+    <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only" href="index.html">
+        Home
+      </a>
+    <div id="navMenuExample" class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+            <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only">
+        Sign In
+      </a>
+            <a id="modal-btn-one" class="navbar-item is-hidden-desktop-only">
+        Sign Up
+      </a>
+        </div>
+    </div>
+
+</nav>
+</div>
+
 <!--first-name-->
 <div class="columns">
+
     <div class="column is-half is-offset-one-quarter">
         <div class="stylist-form">
+            <h1 class="sign-up-title">Sign Up As A Stylist!</h1>
             <div class="field">
                 <label class="label">First Name</label>
                 <div class="control">
@@ -27,78 +56,79 @@
             <div class="control">
                 <input class="input" id="last-name" type="text" placeholder="Text input">
             </div>
-            <!--email-->
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left">
-                    <input class="input" id="email" type="text" placeholder="Email input" value="hello@">
-                    <span class="icon is-small is-left">
+        </div>
+        <!--email-->
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left">
+                <input class="input" id="email" type="text" placeholder="Email input" value="hello@">
+                <span class="icon is-small is-left">
       <i class="fa fa-envelope"></i>
     </span>
-                </div>
-                <!--<p class="help is-danger">This email is invalid</p>-->
             </div>
-            <!--bio-->
-            <div class="field">
-                <label class="label">Bio</label>
-                <div class="control">
-                    <textarea class="textarea" id="bio" placeholder="Textarea"></textarea>
-                </div>
+            <!--<p class="help is-danger">This email is invalid</p>-->
+        </div>
+        <!--bio-->
+        <div class="field">
+            <label class="label">Bio</label>
+            <div class="control">
+                <textarea class="textarea" id="bio" placeholder="Textarea"></textarea>
             </div>
-            <!--experience-->
-            <div class="field">
-                <label class="label">Experience(yrs)</label>
-                <div class="control">
-                    <input class="input" id="experience" type="number" placeholder="Text input">
-                </div>
+        </div>
+        <!--experience-->
+        <div class="field">
+            <label class="label">Experience(yrs)</label>
+            <div class="control">
+                <input class="input" id="experience" type="number" placeholder="Text input">
             </div>
-            <!--phone_number-->
-            <div class="field">
-                <label class="label">Phone Number</label>
-                <div class="control">
-                    <input class="input" id="phone-number" type="text" placeholder="Text input">
-                </div>
+        </div>
+        <!--phone_number-->
+        <div class="field">
+            <label class="label">Phone Number</label>
+            <div class="control">
+                <input class="input" id="phone-number" type="text" placeholder="Text input">
             </div>
-            <!--street address-->
-            <div class="field">
-                <label class="label">Street Address</label>
-                <div class="control">
-                    <input class="input" id="address" type="text" placeholder="Text input">
-                </div>
+        </div>
+        <!--street address-->
+        <div class="field">
+            <label class="label">Street Address</label>
+            <div class="control">
+                <input class="input" id="address" type="text" placeholder="Text input">
             </div>
-            <!--specialty-->
-            <strong>Specialties</strong>
-            <div class="field">
-                <div id="specialties" class="control">
-                    <label class="checkbox">
+        </div>
+        <!--specialty-->
+        <div id="specs"><strong>Specialties</strong></div>
+        <div class="field">
+            <div id="specialties" class="control">
+                <label class="checkbox">
                         <input type="checkbox" id="cut"> Cut
                     </label>
-                    <label class="checkbox">
+                <label class="checkbox">
                         <input type="checkbox" id="blow"> Blow Dry
                     </label>
-                    <label class="checkbox">
+                <label class="checkbox">
                         <input type="checkbox" id="color"> Color
                     </label>
-                    <label class="checkbox">
+                <label class="checkbox">
                         <input type="checkbox" id="highlights"> Highlight
                     </label>
-                    <label class="checkbox">
+                <label class="checkbox">
                         <input type="checkbox" id="ombre"> Ombre
                     </label>
-                    <label class="checkbox">
+                <label class="checkbox">
                         <input type="checkbox" id="balayage"> Balayage
                     </label>
-                    <label class="checkbox">
+                <label class="checkbox">
                         <input type="checkbox" id="hairdo"> Hair-Do
                     </label>
-                </div>
             </div>
-            <!--travel range-->
-            <div class="field">
-                <label class="label">Travel Range</label>
-                <div class="control">
-                    <div class="select">
-                        <select id="travel-range">
+        </div>
+        <!--travel range-->
+        <div class="field">
+            <label class="label">Travel Range</label>
+            <div class="control">
+                <div class="select">
+                    <select id="travel-range">
                             <option>Miles</option>
                             <option>5</option>
                             <option>10</option>
@@ -107,34 +137,35 @@
                             <option>25</option>
                             <option>30</option>
                         </select>
-                    </div>
-                </div>
-            </div>
-            <!--city-->
-            <div class="field">
-                <label class="label">City</label>
-                <div class="control">
-                    <input class="input" id="city" type="text" placeholder="Text input">
-                </div>
-            </div>
-            <!--state-->
-            <div class="field">
-                <label class="label">State</label>
-                <div class="control">
-                    <input class="input" id="state" type="text" placeholder="Text input">
-                </div>
-            </div>
-            <!--zipcode-->
-            <div class="field">
-                <label class="label">Zip Code</label>
-                <div class="control">
-                    <input class="input" id="zip-code" type="number" placeholder="Text input">
                 </div>
             </div>
         </div>
+        <!--city-->
+        <div class="field">
+            <label class="label">City</label>
+            <div class="control">
+                <input class="input" id="city" type="text" placeholder="Text input">
+            </div>
+        </div>
+        <!--state-->
+        <div class="field">
+            <label class="label">State</label>
+            <div class="control">
+                <input class="input" id="state" type="text" placeholder="Text input">
+            </div>
+        </div>
+        <!--zipcode-->
+        <div class="field">
+            <label class="label">Zip Code</label>
+            <div class="control">
+                <input class="input" id="zip-code" type="number" placeholder="Text input">
+            </div>
+        </div>
+        <a id="stylist-form" class="button">Submit</a>
     </div>
 </div>
-<button id="stylist-form">Submit</button>
+</div>
+
 <script type="text/javascript" src="js/stylistSignUp.js"></script>
 <script type="text/javascript" src="js/stylistSignUpStyle.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
