@@ -64,10 +64,7 @@ input {
 }
 
 .modal-card-foot {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top: 1px solid #dbdbdb;
-    opacity: 0.5;
+    padding: 0px;
 }
 
 #service-search {
@@ -81,13 +78,22 @@ input {
     color: #fff;
 }
 
-.select select {
+a.button {
+    margin-top: 200px;
+    margin-left: 0%;
+    color: #fff;
     border-radius: 0px;
-    background: transparent;
-    color: black;
 }
 
-option {
+.select select {
+    font-family: 'Contrail One', cursive;
+    border-radius: 0px;
+    background: #fff;
+    border-color: #000;
+    color: #000;
+    opacity: 0.4;
+}
+
+.option {
     background-color: transparent;
-    color: black;
 }
