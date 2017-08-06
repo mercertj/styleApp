@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/listStyle.css">
     <title>Style App!</title>
 </head>
 
@@ -24,9 +24,6 @@
                 <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
       styleApp
     </a>
-                <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only" href="index.html">
-        Home
-      </a>
             </div>
             <div id="navMenuExample" class="navbar-menu">
                 <div class="navbar-start">
@@ -41,48 +38,22 @@
                 </div>
             </div>
         </nav>
+    </div>
+    <!-- body -->
 
-
-        <div id="service-search" class="control">
-            <div class="select">
-                <select>
-      <option>Search Specialty</option>
-      <option>Cut</option>
-      <option>Blow Dry</option>
-      <option>Color</option>
-      <option>Highlight</option>
-      <option>Ombre</option>
-      <option>Balayage</option>
-      <option>Hair-Do</option>
-    </select>
-            </div>
+    <div class="columns">
+        <div class="column is-one-quarter">
+            <p class="notification is-info">
+                <!--<p class="html">profile pic</p>-->
+                <img src="imgs/avatar.png">
+            </p>
         </div>
-        <div id="distance-search" class="control">
-            <div class="select">
-                <select>
-        <option>Miles</option>
-        <option>5</option>
-        <option>10</option>
-        <option>15</option>
-        <option>20</option>
-        <option>25</option>
-        <option>30</option>
-    </select>
-            </div>
-        </div>
-        <a class="button is-active" href="../list.html">Find A Stylist</a>
-        <!--         <div class="column is-one-quarter">
-            <figure class="image">
-                <img class="no-color" src="imgs/hair.png">
-                <img class="color" src="imgs/haircolor.png">
-            </figure>
-        </div> -->
         <div class="column">
-            <!-- <h1>about-us</h1> -->
+            <p class="notification is-success">bio</p>
         </div>
     </div>
 
-    <!-- body -->
+
     <!-- sign up -->
     <div id="modal" class="modal">
         <div class="modal-background"></div>
@@ -93,7 +64,6 @@
             </header>
             <section class="modal-card-body">
                 <!-- Content ... -->
-
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
@@ -189,8 +159,7 @@
             </footer>
         </div>
     </div>
-
-    <script type="text/javascript" src="js/indexStyle.js"></script>
+    <script type="text/javascript" src="js/listStyle.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </body>
 

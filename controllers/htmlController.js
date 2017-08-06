@@ -4,10 +4,14 @@ module.exports = app => {
 
   app.get("/", (req, res) => res.sendFile(path.join(__dirname, "../public/index.html")));
 
-  app.get("/results", (req, res) => res.sendFile(path.join(__dirname, "../public/results.html")));
-
-  app.get("/stylist", (req, res) => res.sendFile(path.join(__dirname, "../public/profile.html")));
-
   app.get("/clientSignUp", (req, res) => res.sendFile(path.join(__dirname, "../public/clientSignUp.html")));
+
+  app.get("/stylistSignUp", (req, res) => res.sendFile(path.join(__dirname, "../public/stylistSignUp.html")));
+
+  app.post("/list", (req, res) => res.redirect(`/list/${req.body.specialty}/${req.body['distance-search']}`))
+
+  app.get("/list/:speciality/:range", (req, res) => {
+  	res.sendFile(path.join(__dirname, "../public/list.html"))
+  });
 
 };
