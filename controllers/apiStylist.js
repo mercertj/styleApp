@@ -17,6 +17,16 @@ module.exports = app => {
         }).then(result => res.json(result)).catch(err => console.log(err));
     })
 
+    app.get("/api/stylist/search/:service", (req, res) => {
+        const service = req.params.service.replace(/[ +-]/g,'_');
+        db.Stylist.findAll({
+            include: [{model: db.Review, include: [db.Client]}],
+            where: {
+                [service]: true
+            }
+        }).then(result => res.json(result)).catch(err => console.log(err));
+    })
+
     app.post("/api/stylist", (req, res) => {
         db.Stylist.create(req.body).then(result => res.json(result)).catch(err => console.log(err));
     })
