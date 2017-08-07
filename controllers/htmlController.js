@@ -1,17 +1,15 @@
 const path = require("path");
 
+const sendHTML = (res, filePath) => res.sendFile(path.join(__dirname, filePath));
+
 module.exports = app => {
 
-  app.get("/", (req, res) => res.sendFile(path.join(__dirname, "../public/index.html")));
+  app.get("/", (req, res) => sendHTML(res, "../public/index.html"));
 
-  app.get("/clientSignUp", (req, res) => res.sendFile(path.join(__dirname, "../public/clientSignUp.html")));
+  app.get("/clientSignUp", (req, res) => sendHTML(res, "../public/clientSignUp.html"));
 
-  app.get("/stylistSignUp", (req, res) => res.sendFile(path.join(__dirname, "../public/stylistSignUp.html")));
+  app.get("/stylistSignUp", (req, res) => sendHTML(res, "../public/stylistSignUp.html"));
 
-  app.post("/list", (req, res) => res.redirect(`/list/${req.body.specialty}/${req.body['distance-search']}`))
-
-  app.get("/list/:speciality/:range", (req, res) => {
-  	res.sendFile(path.join(__dirname, "../public/list.html"))
-  });
+  app.get("/list", (req, res) => sendHTML(res, "../public/list.html"));
 
 };
