@@ -1,8 +1,8 @@
 body {
     font-family: 'Contrail One', cursive;
-    background-image: url("../imgs/hurr.png");
+
     background-size: cover;
-    height: 500px;
+    height: 700px;
 }
 
 .navbar {
@@ -68,18 +68,18 @@ input {
 }
 
 #service {
-    margin-top: 200px;
+    margin-top: 15px;
     margin-left: 30%;
 }
 
 #distance-search {
-    margin-top: 200px;
+    margin-top: 15px;
     margin-left: 0%;
     color: #fff;
 }
 
 a.button {
-    margin-top: 200px;
+    margin-top: 15px;
     margin-left: 0%;
     color: #fff;
     border-radius: 0px;
@@ -96,4 +96,24 @@ a.button {
 
 .option {
     background-color: transparent;
+}
+
+#header {
+    height: 300px;
+}
+
+#book {
+    margin-top: 100px;
+    width: 200px;
+}
+
+.front,
+.pg4 {
+    width: 250;
+}
+
+.pg5,
+.pg3,
+.pg1 {
+    width: 500px;
 }
