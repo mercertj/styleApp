@@ -11,9 +11,19 @@ body {
     background: transparent;
 }
 
+.navbar {
+
+}
+
 #logo {
     font-size: 35px;
     color: black;
+}
+
+.columns {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
 }
 
 #main {
@@ -85,6 +95,10 @@ a.button {
     border-radius: 0px;
 }
 
+.search {
+    position: fixed;
+}
+
 .select select {
     font-family: 'Contrail One', cursive;
     border-radius: 0px;
@@ -104,16 +118,37 @@ a.button {
 
 #book {
     margin-top: 100px;
-    width: 200px;
+    margin-left: 40%;
 }
 
-.front,
-.pg4 {
-    width: 250;
+img#one {
+    width: 650px;
 }
 
-.pg5,
-.pg3,
-.pg1 {
-    width: 500px;
+img#two {
+    width: 435px;
+        margin-left: -107px;
+}
+
+img#three {
+    width: 215px;
+        margin-left: -107px;
+}
+
+img#four {
+    width: 441px;
+        margin-left: -107px;
+}
+
+img#five {
+    width: 420px;
+        margin-left: -107px;
+}
+
+.textonbook {
+    color: hotpink;
+    /*    margin-top: -51%;
+    margin-left: -184px;*/
+    font-size: 66px;
+    font-weight: bolder;
 }
