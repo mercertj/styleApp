@@ -36,7 +36,7 @@ router.delete("/:id", (req, res) => {
     }).then(result => res.json(result)).catch(err => console.log(err));
 });
 
-router.get("/:service", (req, res) => {
+router.get("/search/:service", (req, res) => {
     const service = req.params.service.replace(/[ +-]/g,'_');
     db.Stylist.findAll({
         include: [{model: db.Review, include: [db.Client]}],
