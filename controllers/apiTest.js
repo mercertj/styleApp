@@ -1,6 +1,7 @@
 const db = require("../models");
+const router = require("express").Router();
 
-const stylistData = [
+const _stylistData = [
 	{
 		first_name: 'Lina',
 		last_name: 'Shamoon',
@@ -66,7 +67,7 @@ const stylistData = [
 	}
 ]
 
-const clientData = [
+const _clientData = [
 	{
 		first_name: 'Margaret',
 		last_name: 'Choi',
@@ -96,7 +97,7 @@ const clientData = [
 	}
 ]
 
-const reviewData = [
+const _reviewData = [
 	{
 		body: 'this is review 1',
 		rating: '1',
@@ -153,7 +154,7 @@ const reviewData = [
 	}
 ]
 
-const feedbackData = [
+const _feedbackData = [
 	{
 		body: 'this is feedback 1',
 		rating: '1',
@@ -210,18 +211,16 @@ const feedbackData = [
 	}
 ]
 
-const insertData = (model, data) => {
+const _insertData = (model, data) => {
 	data.forEach( e => model.create(e).then(result => console.log(result.dataValues)).catch(err => console.log(err)));
 }
 
-module.exports = app => {
+router.get("/create", (req, res) => {
+	_insertData(db.Stylist, _stylistData);
+	_insertData(db.Client, _clientData);
+	_insertData(db.Review, _reviewData);
+	_insertData(db.Feedback, _feedbackData);
+	res.end();
+})
 
-	app.get("/api/test/create", (req, res) => {
-		insertData(db.Stylist, stylistData);
-		insertData(db.Client, clientData);
-		insertData(db.Review, reviewData);
-		insertData(db.Feedback, feedbackData);
-		res.end();
-	})
-
-}
+module.exports = router;
