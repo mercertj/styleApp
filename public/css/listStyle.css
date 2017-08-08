@@ -139,3 +139,7 @@ a.button {
 .option {
     background-color: transparent;
 }
+
+.box{
+	border-radius: 0px;
+}
