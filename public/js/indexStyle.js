@@ -1,20 +1,55 @@
 var color = $('.color').hide();
+var front = $('.front').show();
+var one = $('.pg1').hide();
+var three = $('.pg3').hide();
+var four = $('.pg4').hide();
+var five = $('.pg5').hide();
+
 
 $('#modal-btn-one').on('click', function() {
-    $('#modal').fadeIn("fast", function() {});
-});
-
-$('.delete').on('click', function() {
-    $('.modal').fadeOut("fast", function() {});
+    $('#modal-one').fadeIn("fast", function() {});
 });
 
 $('#modal-btn-two').on('click', function() {
     $('#modal-two').fadeIn("fast", function() {});
 });
 
-$('.delete').on('click', function() {
-    $('#modal-two').fadeOut("fast", function() {});
+$(".front").on('click', function() {
+    $('.pg1').show();
+    $('.front').hide();
 });
+
+$(".pg1").on('click', function() {
+    $('.front').hide();
+    $('.pg1').hide();
+    $('.pg3').show();
+});
+
+// $(".pg1").unbind().on('click', function(){
+// 	});
+
+$(".pg2").on('click', function() {
+    $('.pg3').show();
+    $('.pg2').hide();
+})
+
+$(".pg3").on('click', function() {
+    $('.pg3').hide();
+    $('.pg4').show();
+})
+
+$(".pg4").on('click', function() {
+    $('.pg4').hide();
+    $('.pg5').show();
+})
+
+$('.delete').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
+});
+
+// $('.delete').on('click', function() {
+//     $('#modal-two').fadeOut("fast", function() {});
+// });
 
 $('.no-color').on('click', function() {
     $('.color').show();

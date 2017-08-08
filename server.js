@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-
 const app = express();
 const PORT = process.env.PORT || 8080;
 
@@ -16,11 +15,17 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(express.static("public"));
 
-require("./controllers/htmlController.js")(app);
-require("./controllers/apiStylist.js")(app);
-require("./controllers/apiClient.js")(app);
-require("./controllers/apiTest.js")(app);
+const htmlRoutes = require("./controllers/htmlController.js");
+const stylistRoutes = require("./controllers/apiStylist.js");
+const clientRoutes = require("./controllers/apiClient.js");
+const testRoutes = require("./controllers/apiTest.js");
+// require("./controllers/apiLogin.js")(app);
 
+app.use("/", htmlRoutes)
+app.use("/api/client", clientRoutes)
+app.use("/api/stylist", stylistRoutes)
+app.use("/api/test", testRoutes)
+// app.use("/api/login", loginRoutes)
 
 db.sequelize.sync(reset).then(() => {
     app.listen(PORT, () => console.log("App listening on PORT " + PORT));
