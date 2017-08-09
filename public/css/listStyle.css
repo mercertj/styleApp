@@ -43,7 +43,7 @@ body {
 
 #logo {
     font-size: 35px;
-    color: black;
+    color: blue;
 }
 
 .columns {
@@ -152,4 +152,12 @@ a.button {
 
 .box{
 	border-radius: 0px;
+}
+
+#addyinput {
+    background: transparent;
+    font-family: 'Contrail One', cursive;
+    border: 1px solid darkgray;
+    color: black;
+    border-radius: 0px;
 }
