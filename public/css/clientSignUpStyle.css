@@ -1,6 +1,5 @@
 body {
     font-family: 'Contrail One', cursive;
-    background-image: url("../imgs/blackhair.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -10,22 +9,31 @@ body {
     min-height: 3.25rem;
     position: fixed;
     background: transparent;
-    color: white;
+    color: black;
 }
 
 #modal-btn-one,
 #modal-btn-two {
-    color: white;
+    color: black;
 }
 
 #logo {
     font-size: 35px;
-    color: white;
+    color: black;
 }
 
 .column.is-half.is-offset-one-quarter {
     background: white;
     opacity: 0.8;
+}
+
+.input, .textarea {
+    border-radius: 0px;
+}
+
+.label:not(:last-child) {
+    margin-bottom: .5em;
+    margin-top: .5em;
 }
 
 .column {
@@ -41,11 +49,162 @@ body {
 
 #stylist-form {
     margin-bottom: 50px;
-    margin-left: 47%;
 }
 
 #specs {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
+}
+
+body {
+    font-family: 'Contrail One', cursive;
+
+    background-size: cover;
+    height: 700px;
+}
+
+.navbar {
+    min-height: 3.25rem;
+    position: absolute;
+    background: transparent;
+}
+
+#logo {
+    font-size: 35px;
+    color: black;
+}
+
+.columns {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#main {
+    background: transparent;
+    position: sticky;
+}
+
+.button {
+    box-shadow: 3px 3px 3px #000;
+}
+
+.image {
+    background: transparent;
+}
+
+button {
+    box-shadow: 3px 3px 3px #000;
+}
+
+#about {
+    margin-top: 20px;
+    background: gray;
+}
+
+input {
+    border-radius: 0px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.modal-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+}
+
+.modal-card-body {
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+}
+
+.modal-card-head {
+    border-bottom: 1px solid #dbdbdb;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    opacity: 0.5;
+}
+
+.modal-card-foot {
+    padding: 0px;
+}
+
+#service {
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+#distance-search {
+    margin-top: 15px;
+    margin-left: 0%;
+    color: #fff;
+}
+
+a.button {
+    margin-top: 15px;
+    margin-left: 0%;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.search {
+    position: fixed;
+}
+
+.select select {
+    font-family: 'Contrail One', cursive;
+    border-radius: 0px;
+    background: #fff;
+    border-color: #000;
+    color: #000;
+    opacity: 0.4;
+}
+
+.option {
+    background-color: transparent;
+}
+
+#header {
+    height: 300px;
+}
+
+#book {
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+img#one {
+    width: 650px;
+}
+
+img#two {
+    width: 435px;
+        margin-left: -107px;
+}
+
+img#three {
+    width: 215px;
+        margin-left: -107px;
+}
+
+img#four {
+    width: 441px;
+        margin-left: -107px;
+}
+
+img#five {
+    width: 420px;
+        margin-left: -107px;
+}
+
+.textonbook {
+    color: hotpink;
+    /*    margin-top: -51%;
+    margin-left: -184px;*/
+    font-size: 66px;
+    font-weight: bolder;
 }

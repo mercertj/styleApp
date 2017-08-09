@@ -4,18 +4,18 @@ body {
 
 .navbar {
     min-height: 3.25rem;
-    position: relative;
-    /*background: transparent;*/
+    position: absolute;
+    background: transparent;
+}
+
+#main {
+    background: transparent;
+    position: sticky;
 }
 
 #logo {
     font-size: 35px;
     color: black;
-}
-
-#main {
-    background: transparent;
-    margin-top: 50px;
 }
 
 .button {

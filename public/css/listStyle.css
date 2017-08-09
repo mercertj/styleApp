@@ -1,7 +1,3 @@
-body {
-    font-family: 'Contrail One', cursive;
-}
-
 #header {
     background: white;
 }
@@ -15,7 +11,8 @@ body {
 }
 
 #map {
-    width: 400px;
+    width: 100%;
+    height:auto;
 }
 
 #service {
@@ -28,19 +25,20 @@ body {
 
 body {
     font-family: 'Contrail One', cursive;
-
+	color:black;
     background-size: cover;
     height: 700px;
 }
 
 .navbar {
     min-height: 3.25rem;
-    position: fixed;
+    position: absolute;
     background: transparent;
 }
 
-.navbar {
-    position: absolute;
+#main {
+    background: transparent;
+    position: sticky;
 }
 
 #logo {
@@ -52,10 +50,6 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
-}
-
-#main {
-    background: transparent;
 }
 
 .button {
@@ -98,7 +92,7 @@ input {
     border-bottom: 1px solid #dbdbdb;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .modal-card-foot {
