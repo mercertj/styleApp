@@ -1,23 +1,48 @@
 body {
+    background-image: url("https://media.giphy.com/media/Typ62O3c3mrjW/giphy.gif");
     font-family: 'Contrail One', cursive;
-
     background-size: cover;
-    height: 700px;
+    height: 900px;
+    background-color: #FFFAF7;
+    background-attachment: fixed;
 }
 
 .navbar {
     min-height: 3.25rem;
-    position: fixed;
+    position: absolute;
     background: transparent;
 }
+
+#main {
+    background: transparent;
+    position: sticky;
+}
+
+.button {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.button.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.navbar {}
 
 #logo {
     font-size: 35px;
     color: black;
 }
 
-#main {
-    background: transparent;
+.columns {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
 }
 
 .button {
@@ -85,6 +110,10 @@ a.button {
     border-radius: 0px;
 }
 
+.search {
+    position: fixed;
+}
+
 .select select {
     font-family: 'Contrail One', cursive;
     border-radius: 0px;
@@ -104,16 +133,53 @@ a.button {
 
 #book {
     margin-top: 100px;
-    width: 200px;
+    margin-left: 40%;
 }
 
-.front,
-.pg4 {
-    width: 250;
+img#one {
+    width: 650px;
 }
 
-.pg5,
-.pg3,
-.pg1 {
-    width: 500px;
+img#two {
+    width: 435px;
+    margin-left: -107px;
+}
+
+img#three {
+    width: 215px;
+    margin-left: -107px;
+}
+
+img#four {
+    width: 441px;
+    margin-left: -107px;
+}
+
+img#five {
+    width: 420px;
+    margin-left: -107px;
+}
+
+.textonbook {
+    color: hotpink;
+    /*    margin-top: -51%;
+    margin-left: -184px;*/
+    font-size: 66px;
+    font-weight: bolder;
+}
+
+.gif{
+    box-shadow: 1px 1px 1px gray;
+    width:330px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#polaroid {
+    margin-top: 50px;
+    background-image: url("../imgs/white_wall_hash_@2X.png");
+    background-repeat: repeat;
+    height:450px;
+    width:400px;
+    box-shadow: 3px 3px 3px gray;
 }

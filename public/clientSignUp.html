@@ -12,49 +12,72 @@
     <link rel="stylesheet" href="css/clientSignUpStyle.css">
     <title>Linda's List - Client Sign Up</title>
 </head>
-<nav class="navbar">
-    <div class="navbar-brand">
-        <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
+<div id="main" class="columns">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
       Linda's List
     </a>
-    </div>
-    <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only" href="index.html">
+            <a id="home-btn" class="navbar-item is-hidden-desktop-only" href="index.html">
         Home
       </a>
-    <div id="navMenuExample" class="navbar-menu">
-        <div class="navbar-start">
         </div>
-        <div class="navbar-end">
-            <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only">
+        <div id="navMenuExample" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only">
         Sign In
       </a>
-            <a id="modal-btn-one" class="navbar-item is-hidden-desktop-only">
+                <a id="modal-btn-one" class="navbar-item is-hidden-desktop-only">
         Sign Up
       </a>
+            </div>
+        </div>
+    </nav>
+    <div id="service" class="control">
+        <div class="select">
+            <select id="service-search">
+                <option>Search Specialty</option>
+                <option>Cut</option>
+                <option>Blow Dry</option>
+                <option>Color</option>
+                <option>Highlight</option>
+                <option>Ombre</option>
+                <option>Balayage</option>
+                <option>Hair-Do</option>
+            </select>
         </div>
     </div>
-</nav>
+    <div id="distance-search" class="control">
+        <div id="distance">
+            <input id="addyinput" class="input" type="text" placeholder="Street Address">
+        </div>
+    </div>
+    <a class="button is-active" id="search-all">Find A Stylist</a>
+</div>
 <!--first-name-->
 <div class="columns">
     <div class="column is-half is-offset-one-quarter">
-
         <div id="stylist-form" class="stylist-form">
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control">
+                    <input class="input" id="user-name" type="text" placeholder="Text input">
+                </div>
+            </div>
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
                     <input class="input" id="first-name" type="text" placeholder="Text input">
                 </div>
             </div>
-
             <!--last-name-->
-
             <label class="label">Last Name</label>
             <div class="control">
                 <input class="input" id="last-name" type="text" placeholder="Text input">
             </div>
-
             <!--email-->
-
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left">
@@ -65,7 +88,6 @@
                 </div>
                 <!--<p class="help is-danger">This email is invalid</p>-->
             </div>
-
             <!--phone_number-->
             <!-- 
             <div class="field">
@@ -76,47 +98,143 @@
             </div>
  -->
             <!--street address-->
-
             <div class="field">
                 <label class="label">Street Address</label>
                 <div class="control">
                     <input class="input" id="address" type="text" placeholder="Text input">
                 </div>
             </div>
-
             <!--city-->
-
             <div class="field">
                 <label class="label">City</label>
                 <div class="control">
                     <input class="input" id="city" type="text" placeholder="Text input">
                 </div>
             </div>
-
             <!--state-->
-
             <div class="field">
                 <label class="label">State</label>
                 <div class="control">
                     <input class="input" id="state" type="text" placeholder="Text input">
                 </div>
             </div>
-
             <!--zipcode-->
-
             <div class="field">
                 <label class="label">Zip Code</label>
                 <div class="control">
                     <input class="input" id="zip-code" type="number" placeholder="Text input">
                 </div>
-
             </div>
             <button id="client-form">Submit</button>
         </div>
     </div>
 </div>
-
-
+<!-- modal -->
+<div id="modal-one" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Sign up</p>
+            <button class="delete"></button>
+        </header>
+        <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Text input" value="Margaret">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-user"></i>
+    </span>
+                    <span class="icon is-small is-right">
+      <i class="fa fa-check"></i>
+    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Email input" value="someone@somewhere.com">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-envelope"></i>
+    </span>
+                    <span class="icon is-small is-right">
+      <i class="fa fa-warning"></i>
+    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-lock"></i>
+    </span>
+                </p>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-primary">Submit</button>
+                </div>
+                <div class="control">
+                    <button id="cancel-btn" class="button is-link">Cancel</button>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+        </footer>
+    </div>
+</div>
+<!-- sign in -->
+<div id="modal-two" class="modal" margin-top="20px">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Sign In</p>
+            <button class="delete"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Text input" value="Margaret">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-user"></i>
+    </span>
+                    <span class="icon is-small is-right">
+      <i class="fa fa-check"></i>
+    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-lock"></i>
+    </span>
+                </p>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-primary">Submit</button>
+                </div>
+                <div class="control">
+                    <button id="cancel-btn-two" class="button is-link">Cancel</button>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+        </footer>
+    </div>
+</div>
+<!-- modal end -->
 <script type="text/javascript" src="js/clientSignUpStyle.js"></script>
 <script type="text/javascript" src="js/clientSignUp.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

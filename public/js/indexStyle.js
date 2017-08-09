@@ -14,8 +14,18 @@ $('#modal-btn-two').on('click', function() {
     $('#modal-two').fadeIn("fast", function() {});
 });
 
+$('#cancel-btn').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
+});
+
+$('#cancel-btn-two').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
+});
+
 $(".front").on('click', function() {
     $('.pg1').show();
+    // $('.pg1').addClass("animated");
+    // $('.pg1').addClass("flipInY");
     $('.front').hide();
 });
 
@@ -42,10 +52,6 @@ $(".pg4").on('click', function() {
     $('.pg4').hide();
     $('.pg5').show();
 })
-
-$('.delete').on('click', function() {
-    $('.modal').fadeOut("fast", function() {});
-});
 
 // $('.delete').on('click', function() {
 //     $('#modal-two').fadeOut("fast", function() {});

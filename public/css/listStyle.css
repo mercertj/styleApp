@@ -1,15 +1,155 @@
-#header{
-	background: black;
+#header {
+    background: white;
 }
 
-#list{
-	background: pink;
+#list {
+    background: lightgray;
 }
 
-#map-listpage{
-	background: yellow;
+#map-listpage {
+    background: gray;
 }
 
-#map{
-	width:400px;
+#map {
+    width: 100%;
+    height:auto;
+}
+
+#service {
+    float: left;
+}
+
+#distance-search {
+    float: left;
+}
+
+body {
+    font-family: 'Contrail One', cursive;
+	color:black;
+    background-size: cover;
+    height: 700px;
+}
+
+.navbar {
+    min-height: 3.25rem;
+    position: absolute;
+    background: transparent;
+}
+
+#main {
+    background: transparent;
+    position: sticky;
+}
+
+#logo {
+    font-size: 35px;
+    color: black;
+}
+
+.columns {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.button {
+    box-shadow: 3px 3px 3px #000;
+}
+
+.image {
+    background: transparent;
+}
+
+button {
+    box-shadow: 3px 3px 3px #000;
+}
+
+.button {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.button.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+#about {
+    margin-top: 20px;
+    background: gray;
+}
+
+input {
+    border-radius: 0px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.modal-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+}
+
+.modal-card-body {
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+}
+
+.modal-card-head {
+    border-bottom: 1px solid #dbdbdb;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    opacity: 0;
+}
+
+.modal-card-foot {
+    padding: 0px;
+}
+
+#service {
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+#distance-search {
+    margin-top: 15px;
+    margin-left: 0%;
+    color: #fff;
+}
+
+
+
+a.button {
+    margin-top: 15px;
+    margin-left: 0%;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.search {
+    position: fixed;
+}
+
+.select select {
+    font-family: 'Contrail One', cursive;
+    border-radius: 0px;
+    background: #fff;
+    border-color: #000;
+    color: #000;
+    opacity: 0.4;
+}
+
+.option {
+    background-color: transparent;
+}
+
+.box{
+	border-radius: 0px;
 }
