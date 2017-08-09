@@ -1,5 +1,3 @@
-var color = $('.color').hide();
-
 $('#modal-btn-one').on('click', function() {
     $('#modal').fadeIn("fast", function() {});
 });
