@@ -64,6 +64,20 @@ button {
     box-shadow: 3px 3px 3px #000;
 }
 
+.button {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.button.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
 #about {
     margin-top: 20px;
     background: gray;
@@ -109,6 +123,8 @@ input {
     margin-left: 0%;
     color: #fff;
 }
+
+
 
 a.button {
     margin-top: 15px;

@@ -1,8 +1,10 @@
 body {
+    background-image: url("https://media.giphy.com/media/Typ62O3c3mrjW/giphy.gif");
     font-family: 'Contrail One', cursive;
-
     background-size: cover;
-    height: 700px;
+    height: 900px;
+    background-color: #FFFAF7;
+    background-attachment: fixed;
 }
 
 .navbar {
@@ -16,9 +18,21 @@ body {
     position: sticky;
 }
 
-.navbar {
-
+.button {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0px;
 }
+
+.button.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.navbar {}
 
 #logo {
     font-size: 35px;
@@ -128,22 +142,22 @@ img#one {
 
 img#two {
     width: 435px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 img#three {
     width: 215px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 img#four {
     width: 441px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 img#five {
     width: 420px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 .textonbook {
@@ -152,4 +166,20 @@ img#five {
     margin-left: -184px;*/
     font-size: 66px;
     font-weight: bolder;
+}
+
+.gif{
+    box-shadow: 1px 1px 1px gray;
+    width:330px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#polaroid {
+    margin-top: 50px;
+    background-image: url("../imgs/white_wall_hash_@2X.png");
+    background-repeat: repeat;
+    height:450px;
+    width:400px;
+    box-shadow: 3px 3px 3px gray;
 }

@@ -1,15 +1,15 @@
 $('#modal-btn-one').on('click', function() {
-    $('#modal').fadeIn("fast", function() {});
-});
-
-$('.delete').on('click', function() {
-    $('.modal').fadeOut("fast", function() {});
+    $('#modal-one').fadeIn("fast", function() {});
 });
 
 $('#modal-btn-two').on('click', function() {
     $('#modal-two').fadeIn("fast", function() {});
 });
 
-$('.delete').on('click', function() {
-    $('#modal-two').fadeOut("fast", function() {});
+$('#cancel-btn').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
+});
+
+$('#cancel-btn-two').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
 });

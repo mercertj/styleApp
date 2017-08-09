@@ -19,6 +19,20 @@ body {
 }
 
 .button {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.button.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.button {
     box-shadow: 3px 3px 3px #000;
 }
 
