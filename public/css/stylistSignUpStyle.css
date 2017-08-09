@@ -19,7 +19,7 @@ body {
 
 #logo {
     font-size: 35px;
-    color: black;
+    color: blue;
 }
 
 .input, .textarea {
@@ -181,4 +181,12 @@ a.button {
 #book {
     margin-top: 100px;
     margin-left: 40%;
+}
+
+#addyinput {
+    background: transparent;
+    font-family: 'Contrail One', cursive;
+    border: 1px solid darkgray;
+    color: black;
+    border-radius: 0px;
 }
