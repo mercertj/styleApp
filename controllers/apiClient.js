@@ -1,5 +1,6 @@
 const db = require("../models");
 const router = require('express').Router();
+const getCoordinates = require('../geo/geoUserLatLong.js');
 
 router.get("/", (req, res) => {
     db.Client.findAll({
@@ -7,8 +8,15 @@ router.get("/", (req, res) => {
     }).then(result => res.json(result)).catch(err => console.log(err));
 })
 
+// router.post("/", (req, res) => {
+//     db.Client.create(req.body).then(result => res.json(result)).catch(err => console.log(err));
+// })
+
 router.post("/", (req, res) => {
-    db.Client.create(req.body).then(result => res.json(result)).catch(err => console.log(err));
+    getCoordinates(req.body, newClient => { 
+        console.log('newClient = ', newClient)
+        db.Client.create(newClient).then(result => res.json(result)).catch(err => console.log(err));
+    })
 })
 
 router.put("/", (req, res) => {

@@ -1,5 +1,6 @@
 const db = require("../models");
 const router = require('express').Router();
+const getCoordinates = require('../geo/geoUserLatLong.js');
 
 router.get("/", (req, res) => {
     db.Stylist.findAll({
@@ -8,7 +9,11 @@ router.get("/", (req, res) => {
 })
 
 router.post("/", (req, res) => {
-    db.Stylist.create(req.body).then(result => res.json(result)).catch(err => console.log(err));
+    getCoordinates(req.body, newStylist => { 
+        console.log('newStylist = ', newStylist)
+        db.Stylist.create(newStylist).then(result => res.json(result)).catch(err => console.log(err));
+    })
+    
 })
 
 router.put("/", (req, res) => {
