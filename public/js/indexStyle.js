@@ -35,6 +35,19 @@ $(".pg1").on('click', function() {
     $('.pg3').show();
 });
 
+$('html').on('mousemove',function(e){
+$('#parallax-text').offset({
+  left : '-'+e.pageX/5,
+  top : 100+e.pageY/5
+})
+  $('body').css({
+  backgroundPositionX : e.pageX/5+'px',
+  backgroundPositionY :   '-'+e.pageY/5+'px',
+
+})
+})
+
+
 // $(".pg1").unbind().on('click', function(){
 // 	});
 
