@@ -1,15 +1,15 @@
 body {
     font-family: 'Contrail One', cursive;
     background-size: cover;
+    height:100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-color: #FFFAF7;
 }
 
-.navbar {
-    min-height: 3.25rem;
-    position: fixed;
-    background: transparent;
-    color: black;
+#addyinput{
+    border-radius: 0px;
+    width: 385px;
 }
 
 #modal-btn-one,
@@ -27,13 +27,28 @@ body {
     opacity: 0.8;
 }
 
-.input, .textarea {
+.input,
+.textarea {
     border-radius: 0px;
 }
 
 .label:not(:last-child) {
     margin-bottom: .5em;
     margin-top: .5em;
+}
+
+.button {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.button.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
 }
 
 .column {
@@ -55,13 +70,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
-}
-
-body {
-    font-family: 'Contrail One', cursive;
-
-    background-size: cover;
-    height: 700px;
 }
 
 .navbar {
@@ -171,7 +179,7 @@ a.button {
 #header {
     height: 300px;
 }
-
+/*
 #book {
     margin-top: 100px;
     margin-left: 40%;
@@ -183,28 +191,27 @@ img#one {
 
 img#two {
     width: 435px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 img#three {
     width: 215px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 img#four {
     width: 441px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 img#five {
     width: 420px;
-        margin-left: -107px;
+    margin-left: -107px;
 }
 
 .textonbook {
     color: hotpink;
     /*    margin-top: -51%;
     margin-left: -184px;*/
-    font-size: 66px;
-    font-weight: bolder;
-}
+/*    font-size: 66px;
+    font-weight: bolder;*/

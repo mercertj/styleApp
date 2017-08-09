@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/indexStyle.css">
     <title>Linda's List - Home</title>
 </head>
 
 <body>
+<!-- <div class="gif">
+<iframe src="https://giphy.com/embed/3ohzdNun2Sa8m8WJKU" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/twilight-flying-motion-graphics-3ohzdNun2Sa8m8WJKU">via GIPHY</a></p>
+</div> -->
     <!-- nav -->
     <div id="main" class="columns">
         <nav class="navbar">
@@ -21,7 +27,7 @@
                 <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
       Linda's List
     </a>
-                <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only" href="index.html">
+                <a id="home-btn" class="navbar-item is-hidden-desktop-only" href="index.html">
         Home
       </a>
             </div>
@@ -66,33 +72,38 @@
             </div>
         </div>
         <a class="button is-active" id="search-all">Find A Stylist</a>
-        </div>
-        <!--         <div class="column is-one-quarter">
+    </div>
+    <!--         <div class="column is-one-quarter">
             <figure class="image">
                 <img class="no-color" src="imgs/hair.png">
                 <img class="color" src="imgs/haircolor.png">
             </figure>
         </div> -->
         <div class="columns">
-            <div id="book" class="column">
-                <div id="one" class="front">
-                    <img src="imgs/front.png">
-                </div>
-                <div class="pg1">
-                    <img id="two" src="imgs/pg1.png">
-                </div>
-                <div class="pg5">
-                    <img id="three" src="imgs/pg5.png">
-                </div>
-                <div class="pg3">
-                    <img id="four" src="imgs/pg3.png">
-                </div>
-                <div class="pg4">
-                    <img id="five" src="imgs/pg4.png">
-                </div>
+        <div class="column is-half is-offset-one-third">
+        <img class="gif" src="https://media.giphy.com/media/Q1YmHc2IrDtJK/giphy.gif">
+        </div>
+        </div>
+<!--     <div class="columns">
+        <div id="book" class="column">
+            <div id="one" class="front">
+                <img src="imgs/front.png">
+            </div>
+            <div class="pg1">
+                <img id="two" src="imgs/pg7.png">
+            </div>
+            <div class="pg5">
+                <img id="three" src="imgs/pg5.png">
+            </div>
+            <div class="pg3">
+                <img id="four" src="imgs/pg3.png">
+            </div>
+            <div class="pg4">
+                <img id="five" src="imgs/pg4.png">
             </div>
         </div>
     </div>
+    </div> -->
     <!-- body -->
     <!-- sign up -->
     <div id="modal-one" class="modal">
@@ -148,7 +159,7 @@
                         <button class="button is-primary">Submit</button>
                     </div>
                     <div class="control">
-                        <button class="button is-link">Cancel</button>
+                        <button id="cancel-btn" class="button is-link">Cancel</button>
                     </div>
                 </div>
             </section>
@@ -191,7 +202,7 @@
                         <button class="button is-primary">Submit</button>
                     </div>
                     <div class="control">
-                        <button class="button is-link">Cancel</button>
+                        <button id="cancel-btn-two" class="button is-link">Cancel</button>
                     </div>
                 </div>
             </section>
