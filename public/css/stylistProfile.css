@@ -15,7 +15,7 @@ body {
 
 #logo {
     font-size: 35px;
-    color: black;
+    color: blue;
 }
 
 .button {
@@ -108,4 +108,12 @@ a.button {
 
 .option {
     background-color: transparent;
+}
+
+#addyinput {
+    background: transparent;
+    font-family: 'Contrail One', cursive;
+    border: 1px solid darkgray;
+    color: black;
+    border-radius: 0px;
 }

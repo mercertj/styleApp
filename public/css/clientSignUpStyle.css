@@ -19,7 +19,7 @@ body {
 
 #logo {
     font-size: 35px;
-    color: black;
+    color: blue;
 }
 
 .column.is-half.is-offset-one-quarter {
@@ -179,6 +179,15 @@ a.button {
 #header {
     height: 300px;
 }
+
+#addyinput {
+    background: transparent;
+    font-family: 'Contrail One', cursive;
+    border: 1px solid darkgray;
+    color: black;
+    border-radius: 0px;
+}
+
 /*
 #book {
     margin-top: 100px;
