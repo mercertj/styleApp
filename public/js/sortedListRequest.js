@@ -77,7 +77,7 @@
           $('<div/>', {'class': 'box'}).append(
               $('<article/>', {'class': 'media'}).append(
                   $('<div/>', {class: 'media-left'}).append(
-                      $('<figure/>', {class: 'image is-64x64'}).append(
+                      $('<figure/>', {class: 'image is-84x84'}).append(
                           $('<img>', {src: 'http://bulma.io/images/placeholders/128x128.png',
                                       alt: 'Image'}
                            )
@@ -123,6 +123,25 @@
       );
 
     };      
+
+//===============================================================
+//      new search event listener
+//===============================================================
+      $(document).on("click", "#search-all", searchAll);
+
+    function serviceSearch() {
+        return $('#service-search').val().replace(' ', '+');
+    }
+
+    function addressSearch() {
+        return $('#addyinput').val()
+    }
+
+    function searchAll() { 
+      var svcSearch = serviceSearch();
+      var addySearch = addressSearch();
+        window.location.href = "../list/?service=" + svcSearch +"&address=" + addySearch+"/"
+    }
 
 //===============================================================
 //      populate markers on map
