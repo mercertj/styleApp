@@ -12,7 +12,7 @@
 
 #map {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
 #service {
@@ -26,19 +26,16 @@
 body {
     font-family: 'Contrail One', cursive;
 	color:black;
-    background-size: cover;
-    height: 700px;
 }
 
 .navbar {
     min-height: 3.25rem;
-    position: absolute;
+    position: relative;
     background: transparent;
 }
 
 #main {
     background: transparent;
-    position: sticky;
 }
 
 #logo {
@@ -76,11 +73,6 @@ button {
     border-color: transparent;
     color: #4a4a4a;
     text-decoration: none;
-}
-
-#about {
-    margin-top: 20px;
-    background: gray;
 }
 
 input {
@@ -124,6 +116,9 @@ input {
     color: #fff;
 }
 
+#list{
+    height:800px;
+}
 
 
 a.button {
