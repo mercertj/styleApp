@@ -8,7 +8,7 @@
     console.log("in module sortedlistrequest");
                 console.log('====================================')
     getStylists();
-      console.log("aftere call");
+      console.log("after call");
                 console.log('====================================')
     $(document).on("click", "button", newSearch);
 
@@ -42,15 +42,18 @@
                                     bio       : (data[i].bio),
                                     // services  : (data[i].services),
                                     // rating    : (data[i].Review.rating),
-                                    lat       : (data[i].lat),
-                                    long      : (data[i].lng)
+                                    lat       : (data[i].address_lat),
+                                    long      : (data[i].address_long)
                             };
                             console.log('display = ', display)                            
                             //  dynamically build the display box
                             buildStylistDisplay(i, display);
 
                             //  populate markers on map
-                            // placeMarker(display.lat, display.long)   
+                            if ((display.lat !== null) && (display.long !== null)) {
+                                console.log('latlong = '+ display.lat +" , "+display.long)
+                                placeMarker(display.lat, display.long)   
+                            }
                         }
               }
     	  });
@@ -125,15 +128,39 @@
 //      populate markers on map
 //===============================================================
     function placeMarker (lat, long) {
+        console.log('placeMarker')
+        console.log('latlong = '+ lat +" , "+long)
+        console.log('--------------------------------------------')
         var markerOptions = {
+            center: new google.maps.LatLng(33.4457848, -117.6280111),
             position: { 
                         lat: lat, 
                         lng: long
-                      }
+                      },
+            label: labels[labelIndex++ % labels.length],
         };
         marker = new google.maps.Marker(markerOptions);
-        // marker.setMap(map);
-    };       
+        marker.setMap(map);
+    };   
+
+//===============================================================
+//      populate markers' info windows on map
+//===============================================================
+// var latLngA = {33.4457848, -117.6280111}
+// var latLngB = {33.4557848, -117.6280111}
+// var dist = google.maps.geometry.spherical.computeDistanceBetween (latLngA, latLngB);
+// console.log('distance = ', dist);
+
+    // var infoWindowOptions = {
+    //     content: 'Moscone Is Here!'
+    // };
+
+    // infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+    // google.maps.event.addListener(marker,'click',function(e){
+  
+    //     infoWindow.open(map, marker);
+  
+    // });    
   });
 })(window, google);
 
