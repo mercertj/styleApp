@@ -8,56 +8,69 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/listStyle.css">
-    <title>Volume - Home</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <title>VOLUME - Home</title>
 </head>
 
 <body>
+    <!-- nav -->
     <div id="main" class="columns">
         <nav class="navbar">
             <div class="navbar-brand">
                 <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
-                  Volume
-                </a>
-                <a id="home-btn" class="navbar-item is-hidden-desktop-only" href="../index.html">
-                    Home
-              </a>
+      VOLUME
+    </a>
+                <a id="home-btn" class="navbar-item is-hidden-desktop-only" href="index.html">
+        Home
+      </a>
             </div>
             <div id="navMenuExample" class="navbar-menu">
                 <div class="navbar-start">
                 </div>
                 <div class="navbar-end">
-                    <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only">
-                        Sign In
-                    </a>
-                    <a id="modal-btn-one" class="navbar-item is-hidden-desktop-only">
-                        Sign Up
-                    </a>
+                    <a id="modal-btn-two" class="navbar-item">
+        Sign In
+      </a>
+                    <a id="signed-in-name" class="navbar-item" href="">
+        Name
+      </a>
+                    <a id="modal-btn-one" class="navbar-item">
+        Sign Up
+      </a>
+                    <a id="sign-out-btn" class="navbar-item">
+        Sign Out
+      </a>
                 </div>
             </div>
         </nav>
-        <div id="service" class="control">
-            <div class="select">
-                <select id="service-search">
-                    <option>Search Specialty</option>
-                    <option>Cut</option>
-                    <option>Blow Dry</option>
-                    <option>Color</option>
-                    <option>Highlights</option>
-                    <option>Ombre</option>
-                    <option>Balayage</option>
-                    <option>Hairdo</option>
-                    <option>Lowlights</option>
-                </select>
+        <div class="search-bar">
+            <div id="service" class="control">
+                <div class="select">
+                    <select id="service-search" placeholder="Search Specialty">
+                        <div class="dropdown">
+                            <option>Cut</option>
+                            <option>Blow Dry</option>
+                            <option>Color</option>
+                            <option>Highlights</option>
+                            <option>Ombre</option>
+                            <option>Balayage</option>
+                            <option>Hairdo</option>
+                            <option>Lowlights</option>
+                        </div>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div id="distance-search" class="control">
-            <div id="distance">
-                <input id="addyinput" class="input" type="text" placeholder="Street Address">
+            <div id="distance-search" class="control">
+                <div id="distance">
+                    <input id="addyinput" class="input" type="text" placeholder="Street Address">
+                </div>
             </div>
+            <a class="button is-active" id="search-all">Find A Stylist</a>
         </div>
-        <a class="button is-active" id="search-all">Find A Stylist</a>
     </div>
     <div id="list" class="columns">
         <div id="boxlist" class="column">
@@ -154,7 +167,7 @@
                 </div>
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-primary">Submit</button>
+                        <button id="submit-login" class="button is-primary">Submit</button>
                     </div>
                     <div class="control">
                         <button id="cancel-btn-two" class="button is-link">Cancel</button>
@@ -165,6 +178,42 @@
             </footer>
         </div>
     </div>
+
+    <!-- stylist profile -->
+    <div id="stylistProfile" class="modal">
+        <div class="modal-background"></div>
+        <div id="stylistCard" class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Stylist</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="field is-grouped">
+                    <div class="control">
+                        <figure class="image is-84x84">
+                            <img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
+                        </figure>
+                        <ul>
+                            <li class="profile-name">Name:</li>
+                            <li class="profile-email">Email:</li>
+                            <li class="profile-bio">Bio:</li>
+                            <li class="profile-phone">Phone:</li>
+                            <li class="profile-specs">Specialties:</li>
+                            <li class="profile-travel">Travel:</li>
+                            <li class="profile-city">City:</li>
+                            <li class="profile-state">State:</li>
+                        </ul>
+                    </div>
+                    <div class="control">
+                        <a href="" target="_top">E-Mail</a>
+                    </div>
+                    <a id="exit-profile">Exit</a>
+                </div>
+        </div>
+        </section>
+    </div>
+    </div>
+
+<!-- stylist profile end -->
     <script type="text/javascript" src="../js/list.js"></script>
     <script type="text/javascript" src="../js/listStyle.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
