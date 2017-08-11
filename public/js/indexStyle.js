@@ -41,18 +41,6 @@ $(".pg1").on('click', function() {
     $('.pg3').show();
 });
 
-$('html').on('mousemove',function(e){
-$('#parallax-text').offset({
-  left : '-'+e.pageX/5,
-  top : 100+e.pageY/5
-})
-  $('body').css({
-  backgroundPositionX : e.pageX/5+'px',
-  backgroundPositionY :   '-'+e.pageY/5+'px',
-
-})
-})
-
 
 // $(".pg1").unbind().on('click', function(){
 // 	});
@@ -85,22 +73,3 @@ $('.color').on('click', function() {
     $('.color').hide();
     $('.no-color').show();
 });
-
-
-
-
-
-
-
-
-
-
- /* 
-See https://codepen.io/MarcelSchulz/full/lCvwq
-
-The effect doens't appear as nice when viewing in split view :-)
-
-Fully working version can also be found at (http://schulzmarcel.de/x/drafts/parallax).
-
-*/
-

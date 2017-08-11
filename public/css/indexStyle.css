@@ -18,7 +18,6 @@ body {
 #main {
     background: white;
     position: sticky;
-    padding: 15px;
 }
 
 .button {
@@ -56,6 +55,7 @@ body {
 
 button {
     box-shadow: 3px 3px 3px #000;
+    font-family: 'Contrail One', cursive;
 }
 
 .foot {
