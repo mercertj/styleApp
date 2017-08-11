@@ -1,3 +1,7 @@
+var signedInUsername = $('#signed-in-name').hide();
+var signOutBtn = $('#sign-out-btn').hide();
+var profile = $('#stylistProfile');
+
 $('#modal-btn-one').on('click', function() {
     $('#modal-one').fadeIn("fast", function() {});
 });
@@ -15,5 +19,13 @@ $('#cancel-btn-two').on('click', function() {
 });
 
 $('.cancel-signup').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
+});
+
+$('.box').on('click', function() {
+    $('#stylistProfile').fadeIn("fast", function() {});
+});
+
+$('#exit-profile').on('click', function() {
     $('.modal').fadeOut("fast", function() {});
 });

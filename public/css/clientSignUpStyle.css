@@ -180,6 +180,28 @@ input {
     justify-content: flex-start;
 }
 
+#stylist-sign-up-btn {
+    background-color: #FF928B;
+    border-color: transparent;
+    color: #fff;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Contrail One', cursive;
+    height: 76px;
+    margin-bottom: 39px;
+}
+
+#client-sign-up-btn {
+    background-color: #FFAC81;
+    border-color: transparent;
+    color: #fff;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Contrail One', cursive;
+    height: 76px;
+    margin-bottom: 25px;
+}
+
 #service {
     margin-top: 15px;
     margin-left: 30%;
