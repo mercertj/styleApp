@@ -8,46 +8,72 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/indexStyle.css">
-    <title>VOLUME - Home</title>
+    <title>!FLAT - Home</title>
 </head>
 
 <body>
-    <!-- nav -->
-    <div id="main" class="columns">
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a id="logo" class="navbar-item" href="https://github.com/aarongaither/styleApp">
-      VOLUME
-    </a>
-                <a id="home-btn" class="navbar-item is-hidden-desktop-only" href="index.html">
-        Home
-      </a>
+    <div id="par" style="height:800px;background-attachment:fixed;">
+        !FLAT
+    </div>
+    <div class="parallax" style="height:650px;">
+        <div class="columns">
+            <div class="column">
+                <figure class="image is">
+                    <a id="modal-btn-two">
+                        <p class="image-text">Sign In</p><img id="cart" src="./imgs/saloncart.png"></a>
+                </figure>
             </div>
-            <div id="navMenuExample" class="navbar-menu">
-                <div class="navbar-start">
-                </div>
-                <div class="navbar-end">
-                    <a id="modal-btn-two" class="navbar-item">
-        Sign In
-      </a>
-                    <a id="signed-in-name" class="navbar-item" href="">
-        Name
-      </a>
-                    <a id="modal-btn-one" class="navbar-item">
-        Sign Up
-      </a>
-                    <a id="sign-out-btn" class="navbar-item">
-        Sign Out
-      </a>
-                </div>
+            <div class="column">
+                <figure class="image is">
+                    <a id="about-us-text">
+                        <p class="image-text">Home</p><img id="mirror" src="./imgs/mirror.png"></a>
+                </figure>
             </div>
-        </nav>
-        <div class="search-bar">
+            <div class="column">
+                <figure class="image is">
+                    <a id="modal-btn-one">
+                        <p class="image-text">Sign Up</p><img id="chair" src="./imgs/chair.png"></a>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="image is">
+                    <a id="search-button">
+                        <p class="image-text">Searcn</p><img id="lamp" src="./imgs/lamp.png"></a>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax" style="height:150px;background-image: url('./imgs/wall.jpg');background-attachment:fixed;">
+    </div>
+
+    <!--     <div id="text-area">
+        <div class="columns">
+            <div id="top" class="column">
+                <p class="about">
+                    The right hairstyle can help people make a great first impression, help them look their best for special occasions, and generally improve their overall self- confidence. VOLUME provides a free and easy to use website for both stylists and prospective clients. Users can perform a detailed search for the stylists who meet their interests, schedule, and budget. Stylists can list their bio’s/credentials and examples of their work to help clients make an informed decision. Our goal is to take the hassle out of finding a new stylist so you can start enjoying your new look ASAP!</p>
+            </div>
+        </div> -->
+    <!--         <div class="foot">
+            <h1 class="animated pulse infinite">VOLUME</h1>
+            <p class="devs">BackEnd: Aaron Gaither</p>
+            <p class="devs">FrontEnd: Lina Shamoon</p>
+            <p class="devs">Maps: Fabio Aiello</p>
+            <p class="devs">Middlewear: Thomas Mercer</p>
+        </div> -->
+
+
+
+    <!--         -->
+    <!-- Search  -->
+    <!--         -->
+    <div id="search-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
             <div id="service" class="control">
                 <div class="select">
                     <select id="service-search" placeholder="Search Specialty">
@@ -63,41 +89,23 @@
                         </div>
                     </select>
                 </div>
-            </div>
-            <div id="distance-search" class="control">
-                <div id="distance">
-                    <input id="addyinput" class="input" type="text" placeholder="Street Address">
+                <div id="distance-search" class="control">
+                    <div id="distance">
+                        <input id="addyinput" class="input" type="text" placeholder="Street Address">
+                    </div>
+                    <a class="button is-active" id="search-all">Find A Stylist</a>
+                    <a class="cancel-signup">Cancel</a>
                 </div>
             </div>
-            <a class="button is-active" id="search-all">Find A Stylist</a>
         </div>
     </div>
-    <!--         <div class="column is-one-quarter">
-            <figure class="image">
-                <img class="no-color" src="imgs/hair.png">
-                <img class="color" src="imgs/haircolor.png">
-            </figure>
-        </div> -->
-    <!--     <div class="columns">
-        <div id="polaroid" class="column is-half is-offset-one-third">
-            <img class="gif" src="https://media.giphy.com/media/Q1YmHc2IrDtJK/giphy.gif">
-        </div>
-    </div> -->
-    <!-- squares
-    <div id="text-area">
-        <div class="columns">
-            <div id="top" class="column">
-                <p class="about">
-                    The right hairstyle can help people make a great first impression, help them look their best for special occasions, and generally improve their overall self- confidence. VOLUME provides a free and easy to use website for both stylists and prospective clients. Users can perform a detailed search for the stylists who meet their interests, schedule, and budget. Stylists can list their bio’s/credentials and examples of their work to help clients make an informed decision. Our goal is to take the hassle out of finding a new stylist so you can start enjoying your new look ASAP!</p>
-            </div>
-        </div>
-        <div class="foot">
-            <h1 class="animated pulse infinite">VOLUME</h1>
-            <p class="devs">BackEnd: Aaron Gaither</p>
-            <p class="devs">FrontEnd: Lina Shamoon</p>
-            <p class="devs">Maps: Fabio Aiello</p>
-            <p class="devs">Middlewear: Thomas Mercer</p>
-        </div> -->
+    </div>
+    <!--         -->
+    <!-- Search  -->
+    <!--         -->
+    <!--         -->
+    <!-- Sign Up -->
+    <!--         -->
     <div id="modal-one" class="modal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -122,7 +130,12 @@
         </section>
     </div>
     </div>
+    <!--         -->
+    <!-- sign up -->
+    <!--         -->
+    <!--         -->
     <!-- sign in -->
+    <!--         -->
     <div id="modal-two" class="modal" margin-top="20px">
         <div class="modal-background"></div>
         <div id="sign-in-card" class="modal-card">
@@ -133,7 +146,7 @@
                 <div class="field">
                     <label class="label">Username</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input id="login-username" class="input" type="text" placeholder="Text input" value="Margaret">
+                        <input id="login-username" class="input" type="text" placeholder="Text input" value="Name">
                         <span class="icon is-small is-left">
       <i class="fa fa-user"></i>
     </span>
@@ -164,8 +177,9 @@
             </footer>
         </div>
     </div>
-    <!-- stylist profile end -->
-    <!-- test -->
+    <!--         -->
+    <!-- sign in -->
+    <!--         -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/indexStyle.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
