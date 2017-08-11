@@ -1,19 +1,26 @@
 body {
-    /*    background-image: url("https://media.giphy.com/media/Typ62O3c3mrjW/giphy.gif");
-*/
-    /*    background-image: url("../imgs/salon-01.png");*/
     font-family: 'Contrail One', cursive;
-    height: 900px;
+    height: 1000px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 0px 0px !important;
+
 }
+
+#par {
+    background-image: url("../imgs/wall.jpg");
+    font-size: 75px;
+    color:red;
+    padding-top: 25%;
+    text-align: center;
+}
+
 
 .navbar {
     min-height: 3.25rem;
     position: absolute;
     background: transparent;
 }
+
+
 
 #main {
     background: white;
@@ -47,10 +54,6 @@ body {
 
 .button {
     box-shadow: 3px 3px 3px #000;
-}
-
-.image {
-    background: transparent;
 }
 
 button {
@@ -207,20 +210,6 @@ a.button {
     height: 300px;
 }
 
-#polaroid {
-    margin-top: 50px;
-    background-image: url(../imgs/white_wall_hash_@2X.png);
-    background-repeat: repeat;
-    height: 417px;
-    width: 365px;
-    box-shadow: 3px 3px 3px grey;
-    margin-left: 37.3333%;
-}
-
-.hair {
-    width: 300px;
-}
-
 p.about {
     opacity: 1;
 }
@@ -244,4 +233,52 @@ p.devs {
     margin-left: 60%;
     float: right;
     display: -webkit-box;
+}
+
+#chair {
+    width: 300px;
+    margin-top: 63%;
+    margin-left: 12%;
+}
+
+#chair:hover {
+    width: 350px;
+}
+
+#mirror {
+    width: 300px;
+    margin-left: 55%;
+    margin-top: -4%;
+}
+
+#mirror:hover {
+    width: 350px;
+}
+
+#cart {
+    width: 228px;
+    margin-left: 100%;
+    margin-top: 70%;
+}
+
+#cart:hover {
+    width: 268px;
+}
+
+#lamp {
+    width: 221px;
+    margin-left: -213%;
+    margin-top: -7%;
+}
+
+#lamp:hover {
+    width: 251px;
+}
+
+.image-text {
+    color:white;
+}
+
+#about-us-text {
+    font-family: 'Contrail One', cursive;
 }

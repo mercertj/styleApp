@@ -1,12 +1,5 @@
-var color = $('.color').hide();
-var front = $('.front').show();
-var one = $('.pg1').hide();
-var three = $('.pg3').hide();
-var four = $('.pg4').hide();
-var five = $('.pg5').hide();
-var signedInUsername = $('#signed-in-name').hide();
-var signOutBtn = $('#sign-out-btn').hide();
-
+let signedInUsername = $('#signed-in-name').hide();
+let signOutBtn = $('#sign-out-btn').hide();
 
 $('#modal-btn-one').on('click', function() {
     $('#modal-one').fadeIn("fast", function() {});
@@ -28,48 +21,20 @@ $('.cancel-signup').on('click', function() {
     $('.modal').fadeOut("fast", function() {});
 });
 
-$(".front").on('click', function() {
-    $('.pg1').show();
-    // $('.pg1').addClass("animated");
-    // $('.pg1').addClass("flipInY");
-    $('.front').hide();
+$('#lamp').on('click', function() {
+    $('#search-modal').fadeIn("fast", function() {});
 });
-
-$(".pg1").on('click', function() {
-    $('.front').hide();
-    $('.pg1').hide();
-    $('.pg3').show();
-});
-
-
-// $(".pg1").unbind().on('click', function(){
-// 	});
-
-$(".pg2").on('click', function() {
-    $('.pg3').show();
-    $('.pg2').hide();
-})
-
-$(".pg3").on('click', function() {
-    $('.pg3').hide();
-    $('.pg4').show();
-})
-
-$(".pg4").on('click', function() {
-    $('.pg4').hide();
-    $('.pg5').show();
-})
 
 // $('.delete').on('click', function() {
 //     $('#modal-two').fadeOut("fast", function() {});
 // });
 
-$('.no-color').on('click', function() {
-    $('.color').show();
-    $('.no-color').hide();
-});
+// $('.no-color').on('click', function() {
+//     $('.color').show();
+//     $('.no-color').hide();
+// });
 
-$('.color').on('click', function() {
-    $('.color').hide();
-    $('.no-color').show();
-});
+// $('.color').on('click', function() {
+//     $('.color').hide();
+//     $('.no-color').show();
+// });
