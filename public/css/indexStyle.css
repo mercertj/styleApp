@@ -2,13 +2,18 @@ body {
     font-family: 'Contrail One', cursive;
     height: 1000px;
     background-repeat: no-repeat;
+}
 
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    color: white;
 }
 
 #par {
     background-image: url("../imgs/wall.jpg");
     font-size: 75px;
-    color:red;
+    color: red;
     padding-top: 25%;
     text-align: center;
 }
@@ -214,11 +219,37 @@ p.about {
     opacity: 1;
 }
 
+#search-modal {
+    bottom: 0;
+    left: 0;
+    background: #eee;
+    width: 55%;
+    position: absolute;
+    right: 0;
+    margin-top: 13%;
+    margin-left: 22%;
+    height: 300px;
+    top: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 20;
+}
+
 p.devs {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    font-size: 20px;
+    color:white;
+}
+
+#footer {
+    height: 413px;
+    background-image: url(./imgs/wall.jpg);
+    background-attachment: fixed;
 }
 
 #addyinput {
@@ -244,6 +275,7 @@ p.devs {
 #chair:hover {
     width: 350px;
 }
+
 
 #mirror {
     width: 300px;
@@ -275,10 +307,55 @@ p.devs {
     width: 251px;
 }
 
-.image-text {
-    color:white;
+p.about {
+    font-weight: 30px;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    width: 870px;
+    margin-left: 20%;
 }
 
-#about-us-text {
-    font-family: 'Contrail One', cursive;
+#lamp-text {
+    font-family: 'Satisfy', cursive;
+    margin-left: -655px;
+    position: absolute;
+    width: 104px;
+    color: gray;
+    margin-top: 193px;
+    font-size: 36px;
 }
+
+#mirror-text {
+    font-family: 'Satisfy', cursive;
+    margin-left: 295px;
+    position: absolute;
+    width: 103px;
+    color: gray;
+    margin-top: 297px;
+    font-size: 36px;
+}
+
+#chair-text {
+    font-family: 'Satisfy', cursive;
+    margin-left: 100px;
+    position: absolute;
+    width: 108px;
+    color: gray;
+    margin-top: 149px;
+    font-size: 36px;
+}
+
+#cart-text {
+    font-family: 'Satisfy', cursive;
+    margin-left: 421px;
+    position: absolute;
+    width: 108px;
+    color: gray;
+    margin-top: 157px;
+    font-size: 36px;
+}
+
+.animated.pulse.infinite {
+    width:150px;
+    margin-left: 45%;
