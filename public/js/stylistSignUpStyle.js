@@ -13,3 +13,7 @@ $('#cancel-btn').on('click', function() {
 $('#cancel-btn-two').on('click', function() {
     $('.modal').fadeOut("fast", function() {});
 });
+
+$('.cancel-signup').on('click', function() {
+    $('.modal').fadeOut("fast", function() {});
+});
