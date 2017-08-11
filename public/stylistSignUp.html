@@ -35,28 +35,6 @@
             </div>
         </div>
     </nav>
-        <div id="service" class="control">
-            <div class="select">
-                <select id="service-search">
-                    <option>Search Specialty</option>
-                    <option>Cut</option>
-                    <option>Blow Dry</option>
-                    <option>Color</option>
-                    <option>Highlight</option>
-                    <option>Ombre</option>
-                    <option>Balayage</option>
-                    <option>Hair-Do</option>
-                </select>
-            </div>
-        </div>
-        <div id="distance-search" class="control">
-            <div id="distance">
-                <input id="addyinput" class="input" type="text" placeholder="Street Address">
-            </div>
-        </div>
-        <a class="button is-active" id="search-all">Find A Stylist</a>
-    </div>
-    <a class="button is-active" id="search-all">Find A Stylist</a>
 </div>
 <!--first-name-->
 <div class="columns">
@@ -183,110 +161,72 @@
     </div>
 </div>
 </div>
-<div id="modal-one" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">Sign up</p>
-            <button class="delete"></button>
-        </header>
-        <section class="modal-card-body">
-            <!-- Content ... -->
-            <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+<!-- modal -->
+    <div id="modal-one" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Sign up</p>
+            </header>
+            <section class="modal-card-body">
+                <!-- Content ... -->
+                <div class="field is-grouped">
+                    <div class="control">
+                        <a href="clientSignUp.html"><button id="client-sign-up-btn" class="button is-primary">Sign Up as a Client</button></a>
+                    </div>
+                    <div class="control">
+                        <a href="stylistSignUp.html"><button id="stylist-sign-up-btn" class="button is-link">Sign Up as a Stylist</button></a>
+                    </div>
+                    <a class="cancel-signup">Cancel</a>
                 </div>
-            </div>
-            <div class="field">
-                <label class="label">Username</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Text input" value="Margaret">
-                    <span class="icon is-small is-left">
-      <i class="fa fa-user"></i>
-    </span>
-                    <span class="icon is-small is-right">
-      <i class="fa fa-check"></i>
-    </span>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Email input" value="someone@somewhere.com">
-                    <span class="icon is-small is-left">
-      <i class="fa fa-envelope"></i>
-    </span>
-                    <span class="icon is-small is-right">
-      <i class="fa fa-warning"></i>
-    </span>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Password</label>
-                <p class="control has-icons-left">
-                    <input class="input" type="password" placeholder="Password">
-                    <span class="icon is-small is-left">
-      <i class="fa fa-lock"></i>
-    </span>
-                </p>
-            </div>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-primary">Submit</button>
-                </div>
-                <div class="control">
-                    <button id="cancel-btn" class="button is-link">Cancel</button>
-                </div>
-            </div>
+        </div>
         </section>
         <footer class="modal-card-foot">
         </footer>
     </div>
-</div>
-<!-- sign in -->
-<div id="modal-two" class="modal" margin-top="20px">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">Sign In</p>
-            <button class="delete"></button>
-        </header>
-        <section class="modal-card-body">
-            <div class="field">
-                <label class="label">Username</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Text input" value="Margaret">
-                    <span class="icon is-small is-left">
+    </div>
+    <!-- sign in -->
+    <div id="modal-two" class="modal" margin-top="20px">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Sign In</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" placeholder="Text input" value="Margaret">
+                        <span class="icon is-small is-left">
       <i class="fa fa-user"></i>
     </span>
-                    <span class="icon is-small is-right">
+                        <span class="icon is-small is-right">
       <i class="fa fa-check"></i>
     </span>
+                    </div>
                 </div>
-            </div>
-            <div class="field">
-                <label class="label">Password</label>
-                <p class="control has-icons-left">
-                    <input class="input" type="password" placeholder="Password">
-                    <span class="icon is-small is-left">
+                <div class="field">
+                    <label class="label">Password</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
       <i class="fa fa-lock"></i>
     </span>
-                </p>
-            </div>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-primary">Submit</button>
+                    </p>
                 </div>
-                <div class="control">
-                    <button id="cancel-btn-two" class="button is-link">Cancel</button>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-primary">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button id="cancel-btn-two" class="button is-link">Cancel</button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <footer class="modal-card-foot">
-        </footer>
+            </section>
+            <footer class="modal-card-foot">
+            </footer>
+        </div>
     </div>
-</div>
 <!-- modal end -->
 <script type="text/javascript" src="js/stylistSignUp.js"></script>
 <script type="text/javascript" src="js/stylistSignUpStyle.js"></script>

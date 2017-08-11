@@ -94,17 +94,54 @@ input {
     background-color: white;
 }
 
+#stylist-sign-up-btn {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    width: 400px;
+    height: 76px;
+    margin-bottom: 39px;
+    margin-left: 100px;
+}
+
+#client-sign-up-btn {
+    background-color: #0000FF;
+    border-color: transparent;
+    color: #fff;
+    width: 400px;
+    height: 76px;
+    margin-bottom: 39px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
 .modal-card-head {
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: none;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    opacity: 0;
+    margin-top: 75px;
 }
 
 .modal-card-foot {
     padding: 0px;
-    border: none;
-    border-top: 0px solid;
+}
+
+
+.modal-card-foot {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 0px solid transparent;
+}
+
+.field.is-grouped {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    height: 291px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 

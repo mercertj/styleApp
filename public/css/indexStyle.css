@@ -1,9 +1,10 @@
 body {
-    background-image: url("https://media.giphy.com/media/Typ62O3c3mrjW/giphy.gif");
+    /*    background-image: url("https://media.giphy.com/media/Typ62O3c3mrjW/giphy.gif");
+*/
+/*    background-image: url("../imgs/salon-01.png");*/
     font-family: 'Contrail One', cursive;
-    background-size: cover;
-    height: 2700px;
-    background-color: #FFFAF7;
+    height: 900px;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0px 0px !important;
 }
@@ -15,8 +16,9 @@ body {
 }
 
 #main {
-    background: transparent;
+    background: white;
     position: sticky;
+    padding: 15px;
 }
 
 .button {
@@ -32,8 +34,6 @@ body {
     color: #4a4a4a;
     text-decoration: none;
 }
-
-.navbar {}
 
 #logo {
     font-size: 35px;
@@ -58,9 +58,13 @@ button {
     box-shadow: 3px 3px 3px #000;
 }
 
-#about {
+.foot {
+    font-family: 'Contrail One', cursive;
     margin-top: 20px;
-    background: gray;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 input {
@@ -145,7 +149,7 @@ a.button {
     width: 400px;
     height: 76px;
     margin-bottom: 39px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 100px;
 }
 
@@ -180,143 +184,12 @@ a.button {
     margin-left: 37.3333%;
 }
 
-.home-text {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 40px;
-}
-
-#top {
-    color: black;
-    margin: 40px;
-    height: 300px;
-    font-size: 35px;
-    text-align: center;
-    background-color: #7DC6E3;
-    opacity: 0.7;
-}
-
-#top-two {
-    color: black;
-    margin: 40px;
-    height: 300px;
-    font-size: 35px;
-    text-align: center;
-    background-color: #7DC6E3;
-    opacity: 0.7;
-}
-
-#middle {
-    color: black;
-    margin: 40px;
-    height: 300px;
-    font-size: 35px;
-    text-align: center;
-    background-color: #7DC6E3;
-    opacity: 0.7;
-}
-
-#bottom {
-    color: black;
-    margin: 40px;
-    height: 300px;
-    font-size: 35px;
-    text-align: center;
-    background-color: #7DC6E3;
-    opacity: 0.7;
-}
-
-#bottom-two {
-    color: black;
-    margin: 40px;
-    height: 300px;
-    font-size: 35px;
-    text-align: center;
-    background-color: #7DC6E3;
-    opacity: 0.7;
-}
-
-#text-area {
-    margin-top: 75px;
-}
-
 .hair {
     width: 300px;
 }
 
 p.about {
     opacity: 1;
-}
-
-img.sizzor {
-    width: 300px;
-    margin-left: 15%;
-    margin-top: 15%;
-}
-
-img.blowdry {
-    width: 228px;
-    margin-left: 24%;
-}
-
-img.mirro {
-    margin-left: 10%;
-    width: 228px;
-    height: 300px;
-    margin-left: 24%;
-}
-
-
-/* background layer */
-
-div#parallax-bg-3 {
-    position: fixed;
-    width: 960px;
-    top: 0;
-    left: 50%;
-    margin-left: -470px;
-    z-index: 3;
-}
-
-
-/* foreground */
-
-div#parallax-bg-3 div {
-    background-repeat: no-repeat;
-    position: absolute;
-    display: block;
-    overflow: hidden;
-}
-
-div#bg-3-1 {
-    width: 210px;
-    background: url(../imgs/comb.png);
-    height: 247px;
-    top: 1179px;
-    margin-top: 429px;
-    right: -78px;
-}
-
-div#bg-3-2 {
-    background: url(../imgs/bd.png);
-    width: 984px;
-    height: 174px;
-    top: 1529px;
-    right: 71px;
-}
-
-div#bg-3-3 {
-    /*    background: url(../imgs/sizzor.png);
-*/
-    width: 100%;
-    height: 713px;
-    top: 1799px;
-    right: 3px;
-}
-
-div#bg-3-3 h1 {
-    font-size: 90px;
-    text-align: center;
 }
 
 p.devs {
@@ -333,64 +206,3 @@ p.devs {
     color: black;
     border-radius: 0px;
 }
-
-/*#text-area{}
-
-
-
-
-
-
-#book {
-    margin-top: 100px;
-    margin-left: 40%;
-}
-
-img#one {
-    width: 650px;
-}
-
-img#two {
-    width: 435px;
-    margin-left: -107px;
-}
-
-img#three {
-    width: 215px;
-    margin-left: -107px;
-}
-
-img#four {
-    width: 441px;
-    margin-left: -107px;
-}
-
-img#five {
-    width: 420px;
-    margin-left: -107px;
-}
-
-.textonbook {
-    color: hotpink;
-        margin-top: -51%;
-    margin-left: -184px;
-    font-size: 66px;
-    font-weight: bolder;
-}
-
-.gif{
-    box-shadow: 1px 1px 1px gray;
-    width:330px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-#polaroid {
-    margin-top: 50px;
-    background-image: url("../imgs/white_wall_hash_@2X.png");
-    background-repeat: repeat;
-    height:450px;
-    width:400px;
-    box-shadow: 3px 3px 3px gray;
-}
-*/
