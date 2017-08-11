@@ -220,6 +220,10 @@ a.button {
     display: -webkit-box;
 }
 
+#stylistCard {
+    height: 100%;
+}
+
 .field.is-grouped {
     display: -webkit-box;
     display: -ms-flexbox;

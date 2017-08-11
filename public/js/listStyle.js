@@ -26,6 +26,6 @@ $('.box').on('click', function() {
     $('#stylistProfile').fadeIn("fast", function() {});
 });
 
-$('#exit').on('click', function() {
+$('#exit-profile').on('click', function() {
     $('.modal').fadeOut("fast", function() {});
 });
