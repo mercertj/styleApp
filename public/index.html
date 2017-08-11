@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/indexStyle.css">
     <title>!FLAT - Home</title>
@@ -18,87 +19,85 @@
 <body>
     <div id="par" style="height:800px;background-attachment:fixed;">
         !FLAT
+        <h1>Bringing the hair salon to you</h1>
+        <br>
+        <br>
+        <h1 class="animated pulse infinite">&#x25BD;</h1>
     </div>
     <div class="parallax" style="height:650px;">
         <div class="columns">
             <div class="column">
                 <figure class="image is">
                     <a id="modal-btn-two">
-                        <p class="image-text">Sign In</p><img id="cart" src="./imgs/saloncart.png"></a>
+                        <p id="cart-text" class="image-text">Sign In</p><img id="cart" src="./imgs/saloncart.png"></a>
                 </figure>
             </div>
             <div class="column">
                 <figure class="image is">
                     <a id="about-us-text">
-                        <p class="image-text">Home</p><img id="mirror" src="./imgs/mirror.png"></a>
+                        <p id="mirror-text" class="image-text">Home</p><img id="mirror" src="./imgs/mirror.png"></a>
                 </figure>
             </div>
             <div class="column">
                 <figure class="image is">
                     <a id="modal-btn-one">
-                        <p class="image-text">Sign Up</p><img id="chair" src="./imgs/chair.png"></a>
+                        <p id="chair-text" class="image-text">Sign Up</p><img id="chair" src="./imgs/chair.png"></a>
                 </figure>
             </div>
             <div class="column">
                 <figure class="image is">
                     <a id="search-button">
-                        <p class="image-text">Searcn</p><img id="lamp" src="./imgs/lamp.png"></a>
+                        <p id="lamp-text" class="image-text">Search</p><img id="lamp" src="./imgs/lamp.png"></a>
                 </figure>
             </div>
         </div>
     </div>
-
-    <div class="parallax" style="height:150px;background-image: url('./imgs/wall.jpg');background-attachment:fixed;">
-    </div>
-
-    <!--     <div id="text-area">
-        <div class="columns">
-            <div id="top" class="column">
-                <p class="about">
-                    The right hairstyle can help people make a great first impression, help them look their best for special occasions, and generally improve their overall self- confidence. VOLUME provides a free and easy to use website for both stylists and prospective clients. Users can perform a detailed search for the stylists who meet their interests, schedule, and budget. Stylists can list their bio’s/credentials and examples of their work to help clients make an informed decision. Our goal is to take the hassle out of finding a new stylist so you can start enjoying your new look ASAP!</p>
-            </div>
-        </div> -->
-    <!--         <div class="foot">
-            <h1 class="animated pulse infinite">VOLUME</h1>
-            <p class="devs">BackEnd: Aaron Gaither</p>
-            <p class="devs">FrontEnd: Lina Shamoon</p>
-            <p class="devs">Maps: Fabio Aiello</p>
-            <p class="devs">Middlewear: Thomas Mercer</p>
-        </div> -->
-
-
-
-    <!--         -->
-    <!-- Search  -->
-    <!--         -->
-    <div id="search-modal" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div id="service" class="control">
-                <div class="select">
-                    <select id="service-search" placeholder="Search Specialty">
-                        <div class="dropdown">
-                            <option>Cut</option>
-                            <option>Blow Dry</option>
-                            <option>Color</option>
-                            <option>Highlights</option>
-                            <option>Ombre</option>
-                            <option>Balayage</option>
-                            <option>Hairdo</option>
-                            <option>Lowlights</option>
-                        </div>
-                    </select>
+    <div id="footer" class="parallax" style="background-image: url('./imgs/wall.jpg');background-attachment:fixed;">
+        <div id="text-area">
+            <div class="columns">
+                <div id="top" class="column">
+                    <p class="about">
+                        The right hairstyle can help people make a great first impression, help them look their best for special occasions, and generally improve their overall self- confidence. VOLUME provides a free and easy to use website for both stylists and prospective clients. Users can perform a detailed search for the stylists who meet their interests, schedule, and budget. Stylists can list their bio’s/credentials and examples of their work to help clients make an informed decision. Our goal is to take the hassle out of finding a new stylist so you can start enjoying your new look ASAP!</p>
                 </div>
-                <div id="distance-search" class="control">
-                    <div id="distance">
-                        <input id="addyinput" class="input" type="text" placeholder="Street Address">
+            </div>
+            <div class="foot">
+                <p class="devs">BackEnd: Aaron Gaither</p>
+                <p class="devs">FrontEnd: Lina Shamoon</p>
+                <p class="devs">Maps: Fabio Aiello</p>
+                <p class="devs">Middlewear: Thomas Mercer</p>
+            </div>
+        </div>
+        <!--         -->
+        <!-- Search  -->
+        <!--         -->
+        <div id="search-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div id="service" class="control">
+                    <div class="select">
+                        <select id="service-search" placeholder="Search Specialty">
+                            <div class="dropdown">
+                                <option>Cut</option>
+                                <option>Blow Dry</option>
+                                <option>Color</option>
+                                <option>Highlights</option>
+                                <option>Ombre</option>
+                                <option>Balayage</option>
+                                <option>Hairdo</option>
+                                <option>Lowlights</option>
+                            </div>
+                        </select>
                     </div>
-                    <a class="button is-active" id="search-all">Find A Stylist</a>
-                    <a class="cancel-signup">Cancel</a>
+                    <div id="distance-search" class="control">
+                        <div id="distance">
+                            <input id="addyinput" class="input" type="text" placeholder="Street Address">
+                        </div>
+                        <a class="button is-active" id="search-all">Find A Stylist</a>
+                        <a class="cancel-signup">Cancel</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!--         -->
     <!-- Search  -->
