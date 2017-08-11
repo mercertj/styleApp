@@ -116,7 +116,7 @@ input {
     margin-top: 40px;
 }
 
-.modal-card-head {
+/*.modal-card-head {
     border-bottom: none;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -132,7 +132,7 @@ input {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 0px solid transparent;
-}
+}*/
 
 .field.is-grouped {
     display: -webkit-box;

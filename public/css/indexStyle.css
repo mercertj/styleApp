@@ -1,7 +1,7 @@
 body {
     /*    background-image: url("https://media.giphy.com/media/Typ62O3c3mrjW/giphy.gif");
 */
-/*    background-image: url("../imgs/salon-01.png");*/
+    /*    background-image: url("../imgs/salon-01.png");*/
     font-family: 'Contrail One', cursive;
     height: 900px;
     background-repeat: no-repeat;
@@ -83,20 +83,30 @@ input {
 
 .modal-card-body {
     -webkit-overflow-scrolling: touch;
-    background-color: white;
+    background-color: #eee;
+    box-shadow: 3px 3px 3px grey;
+    height: 310px;
 }
 
 .modal-card-head {
+    background: #FEC3A6;
     border-bottom: none;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    margin-top: 75px;
+    margin-top: 15%;
 }
 
 .modal-card-foot {
     padding: 0px;
 }
 
+input {
+    font-family: 'Contrail One', cursive;
+}
+
+.modal-card {
+    width: 400px;
+}
 
 .modal-card-foot {
     border-bottom-left-radius: 5px;
@@ -104,11 +114,17 @@ input {
     border-top: 0px solid transparent;
 }
 
+#sign-in-card {
+    width: 335px;
+}
+
 .field.is-grouped {
     display: -webkit-box;
     display: -ms-flexbox;
     display: block;
+    padding-top: 20px;
     height: 291px;
+    padding-left: 8%;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -117,6 +133,22 @@ input {
 #service {
     margin-top: 15px;
     margin-left: 30%;
+}
+
+#submit-login {
+    background-color: #FFAC81;
+    border-color: transparent;
+    color: #fff;
+    width: 250px;
+}
+
+#cancel-btn-two {
+    background-color: #FF928B;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: none;
+    width: 250px;
+    margin-top: 15px;
 }
 
 #distance-search {
@@ -133,24 +165,25 @@ a.button {
 }
 
 #stylist-sign-up-btn {
-    background-color: #00d1b2;
+    background-color: #FF928B;
     border-color: transparent;
     color: #fff;
-    width: 400px;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Contrail One', cursive;
     height: 76px;
     margin-bottom: 39px;
-    margin-left: 100px;
 }
 
 #client-sign-up-btn {
-    background-color: #0000FF;
+    background-color: #FFAC81;
     border-color: transparent;
     color: #fff;
-    width: 400px;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Contrail One', cursive;
     height: 76px;
-    margin-bottom: 39px;
-    margin-top: 40px;
-    margin-left: 100px;
+    margin-bottom: 25px;
 }
 
 .search {
@@ -205,4 +238,10 @@ p.devs {
     border: 1px solid darkgray;
     color: black;
     border-radius: 0px;
+}
+
+.search-bar {
+    margin-left: 60%;
+    float: right;
+    display: -webkit-box;
 }
