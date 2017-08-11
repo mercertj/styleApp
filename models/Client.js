@@ -57,5 +57,7 @@ module.exports = function(sequelize, DataTypes) {
 	  });
 	};
 
+	Client.associate = models => Client.hasOne(models.User);
+
 	return Client;
 };

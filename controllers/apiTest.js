@@ -18,10 +18,12 @@ const _stylistData = [
 		balayage: false,
 		hair_do: true,
 		travel_range: 10,
-		street_address: '123 Undefined Street',
+		street_address: '3945 Governor Dr',
 		city: 'San Diego',
 		state: 'CA',
-		zipcode: '92111'
+		zipcode: '92122',
+		address_lat: 32.853791,
+		address_long: -117.203928
 	},
 	{
 		first_name: 'Tom',
@@ -39,10 +41,12 @@ const _stylistData = [
 		balayage: true,
 		hair_do: true,
 		travel_range: 20,
-		street_address: '123 NaN Street',
+		street_address: '5075 Shoreham Pl',
 		city: 'San Diego',
 		state: 'CA',
-		zipcode: '92111'
+		zipcode: '92122',
+		address_lat: 32.852727,
+		address_long: -117.184973
 	},
 	{
 		first_name: 'Fabio',
@@ -60,10 +64,12 @@ const _stylistData = [
 		balayage: false,
 		hair_do: true,
 		travel_range: 30,
-		street_address: '123 Null Street',
+		street_address: '7405 Bovet Way',
 		city: 'San Diego',
 		state: 'CA',
-		zipcode: '92111'
+		zipcode: '92111',
+		address_lat: 32.860259,
+		address_long: -117.187881
 	}
 ]
 
@@ -91,6 +97,15 @@ const _clientData = [
 		last_name: 'Rahman',
 		email: 'fahad@ucsdext.org',
 		street_address: '123 Arrow Street',
+		city: 'San Diego',
+		state: 'CA',
+		zipcode: '92111'
+	},
+	{
+		first_name: 'Aaron',
+		last_name: 'Gaither',
+		email: 'aaron@ucsdext.org',
+		street_address: '123 object street',
 		city: 'San Diego',
 		state: 'CA',
 		zipcode: '92111'
@@ -211,6 +226,14 @@ const _feedbackData = [
 	}
 ]
 
+const _userData = [{
+	username : 'aaron',
+	email : 'test@email.com',
+	password : 'testpass',
+	account_type : 'client',
+	client_id: 4
+}]
+
 const _insertData = (model, data) => {
 	data.forEach( e => model.create(e).then(result => console.log(result.dataValues)).catch(err => console.log(err)));
 }
@@ -220,6 +243,7 @@ router.get("/create", (req, res) => {
 	_insertData(db.Client, _clientData);
 	_insertData(db.Review, _reviewData);
 	_insertData(db.Feedback, _feedbackData);
+	_insertData(db.User, _userData);
 	res.end();
 })
 
