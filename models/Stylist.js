@@ -81,5 +81,7 @@ module.exports = function(sequelize, DataTypes) {
 	  });
 	};
 
+	Stylist.associate = models => Stylist.hasOne(models.User);
+
 	return Stylist;
 };
