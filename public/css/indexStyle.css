@@ -206,3 +206,9 @@ p.devs {
     color: black;
     border-radius: 0px;
 }
+
+.search-bar {
+    margin-left: 60%;
+    float: right;
+    display: -webkit-box;
+}

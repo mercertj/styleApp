@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
@@ -32,15 +32,22 @@
                 <div class="navbar-start">
                 </div>
                 <div class="navbar-end">
-                    <a id="modal-btn-two" class="navbar-item is-hidden-desktop-only">
+                    <a id="modal-btn-two" class="navbar-item">
         Sign In
       </a>
-                    <a id="modal-btn-one" class="navbar-item is-hidden-desktop-only">
+                          <a id="signed-in-name" class="navbar-item">
+        Name
+      </a>
+                    <a id="modal-btn-one" class="navbar-item">
         Sign Up
+      </a>
+                          <a id="sign-out-btn" class="navbar-item">
+        Sign Out
       </a>
                 </div>
             </div>
         </nav>
+    <div class="search-bar">
         <div id="service" class="control">
             <div class="select">
                 <select id="service-search">
@@ -62,13 +69,14 @@
         </div>
         <a class="button is-active" id="search-all">Find A Stylist</a>
     </div>
+</div>
     <!--         <div class="column is-one-quarter">
             <figure class="image">
                 <img class="no-color" src="imgs/hair.png">
                 <img class="color" src="imgs/haircolor.png">
             </figure>
         </div> -->
-<!--     <div class="columns">
+    <!--     <div class="columns">
         <div id="polaroid" class="column is-half is-offset-one-third">
             <img class="gif" src="https://media.giphy.com/media/Q1YmHc2IrDtJK/giphy.gif">
         </div>
@@ -88,15 +96,14 @@
             <p class="devs">Maps: Fabio Aiello</p>
             <p class="devs">Middlewear: Thomas Mercer</p>
         </div> -->
-<!--         <div id="modal-one" class="modal">
+            <div id="modal-one" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
                     <p class="modal-card-title">Sign up</p>
                 </header>
-                <section class="modal-card-body"> -->
-                    <!-- Content ...
-<!                    <div class="field is-grouped">
+                <section class="modal-card-body">
+    <div class="field is-grouped">
                         <div class="control">
                             <a href="clientSignUp.html">
                                 <button id="client-sign-up-btn" class="button is-primary">Sign Up as a Client</button>
@@ -112,7 +119,7 @@
             </div>
             </section>
         </div>
-    </div>  -->
+    </div> 
     <!-- sign in -->
     <div id="modal-two" class="modal" margin-top="20px">
         <div class="modal-background"></div>
@@ -124,7 +131,7 @@
                 <div class="field">
                     <label class="label">Username</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="Text input" value="Margaret">
+                        <input id="login-username" class="input" type="text" placeholder="Text input" value="Margaret">
                         <span class="icon is-small is-left">
       <i class="fa fa-user"></i>
     </span>
@@ -136,7 +143,7 @@
                 <div class="field">
                     <label class="label">Password</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="password" placeholder="Password">
+                        <input id="login-password" class="input" type="password" placeholder="Password">
                         <span class="icon is-small is-left">
       <i class="fa fa-lock"></i>
     </span>
@@ -144,7 +151,7 @@
                 </div>
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-primary">Submit</button>
+                        <button id="submit-login" class="button is-primary">Submit</button>
                     </div>
                     <div class="control">
                         <button id="cancel-btn-two" class="button is-link">Cancel</button>
@@ -155,6 +162,7 @@
             </footer>
         </div>
     </div>
+    <!-- test -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/indexStyle.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
