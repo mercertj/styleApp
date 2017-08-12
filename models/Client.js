@@ -55,9 +55,8 @@ module.exports = function(sequelize, DataTypes) {
 	  Client.hasMany(models.Feedback, {
 	    onDelete: "cascade"
 	  });
+	  Client.hasOne(models.User);
 	};
-
-	Client.associate = models => Client.hasOne(models.User);
 
 	return Client;
 };

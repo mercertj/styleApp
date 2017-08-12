@@ -69,7 +69,8 @@ module.exports = function(sequelize, DataTypes) {
 		address_long: {
 			type: DataTypes.FLOAT,
 			validate: { min: -180, max: 180 }
-		} 
+		},
+		picture: DataTypes.STRING
 	},
 	{
 		underscored: true
@@ -79,9 +80,8 @@ module.exports = function(sequelize, DataTypes) {
 	  Stylist.hasMany(models.Review, {
 	    onDelete: "cascade"
 	  });
+	  Stylist.hasOne(models.User);
 	};
-
-	Stylist.associate = models => Stylist.hasOne(models.User);
-
+	
 	return Stylist;
 };
