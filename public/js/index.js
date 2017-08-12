@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#search-all", function(){
         var svcSearch = $('#service-search').val().replace(' ', '+');
-        var addySearch = $('#addyinput').val().replace(' ', '+');
+        var addySearch = $('#addyinput').val().replace(/ /g, '+');
         window.location.href = "../list/?service=" + svcSearch +"&address=" + addySearch+"/"
     });
 

@@ -3,6 +3,7 @@
 //						to build a list
 // =============================================================
 // "use strict"
+
 (function(window, google){
   $(document).ready(function() {
     console.log("in module sortedlistrequest");
@@ -20,12 +21,12 @@
         var params = (new URL(document.location)).searchParams;
         console.log('params ', params)
         var service = params.get("service");
-        console.log('service ', service)
-        var range = parseInt(params.get("range"));
-
+        console.log('service = ', service)
+        var searchAddress = params.get("address");
+        console.log('searchAddress = ', searchAddress)
 
         //  request data from server side
-      	$.get("../api/stylist/search/" + service, function(data) {
+      	$.get("../api/stylist/search/" + service + "/" + searchAddress, function(data) {
       				console.log("stylists", data);
       				if (data) {
                 console.log("how many = ", data.length);
@@ -123,25 +124,6 @@
       );
 
     };      
-
-//===============================================================
-//      new search event listener
-//===============================================================
-      $(document).on("click", "#search-all", searchAll);
-
-    function serviceSearch() {
-        return $('#service-search').val().replace(' ', '+');
-    }
-
-    function addressSearch() {
-        return $('#addyinput').val()
-    }
-
-    function searchAll() { 
-      var svcSearch = serviceSearch();
-      var addySearch = addressSearch();
-        window.location.href = "../list/?service=" + svcSearch +"&address=" + addySearch+"/"
-    }
 
 //===============================================================
 //      populate markers on map

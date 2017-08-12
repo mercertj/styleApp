@@ -35,9 +35,9 @@ var labelIndex = 0;
 			      lng: position.coords.longitude
 			    };
 
-			    infoWindow.setPosition(pos);
-			    infoWindow.setContent('This is your location.');
-			    infoWindow.open(map);
+			    // infoWindow.setPosition(pos);
+			    // infoWindow.setContent('This is your location.');
+			    // infoWindow.open(map);
 			    map.setCenter(pos);
 			  }, function() {
 			    handleLocationError(true, infoWindow, map.getCenter());
