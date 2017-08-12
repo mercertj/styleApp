@@ -45,8 +45,7 @@ router.get("/search/:service/:address", (req, res) => {
     console.log('backend get')
     const service = req.params.service.replace(/[ +-]/g,'_');
     db.Stylist.findAll({
-        // include: [{model: db.Review, include: [db.Client]}],
-        include: [db.Client],
+        include: [{model: db.Review, include: [db.Client]}],
         where: {
             [service]: true
         }
